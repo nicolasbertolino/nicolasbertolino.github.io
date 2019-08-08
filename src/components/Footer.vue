@@ -1,0 +1,40 @@
+<template>
+  <div class="footer">
+    <footer>
+      <p><a target="_blank" href="https://github.com/nicolasbertolino">Développement & Design</a></p>
+      <p><a target="_blank" href="https://www.linkedin.com/in/nicolas-bertolino/">Nicolas Bertolino</a></p>
+      <p><a href="mailto:bertolinonicolas@gmail.com">Email</a></p>
+      <p><a href="@/assets/Bertolino_Nicolas–CV.pdf" download>Curriculum Vitae</a></p>
+    </footer>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  color: #999;
+  padding: 20vh 3vw 10vh;
+  cursor: default;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer a:hover {
+  color: #fca901;
+}
+
+@media screen and (max-width: 683px) {
+  footer {
+    justify-content: center;
+  }
+}
+</style>
