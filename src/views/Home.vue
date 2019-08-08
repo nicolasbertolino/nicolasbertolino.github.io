@@ -56,7 +56,6 @@ export default {};
 .intro p {
   place-self: end center;
   max-width: 390px;
-  color: blue;
 }
 
 @media screen and (max-width: 1161px) {
