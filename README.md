@@ -1,29 +1,6 @@
-# my-website
-
-## Project setup
-```
-npm install
+# Hi.
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is my personal website where you'll find pretty much everything you need to know about me. I put my heart into it. Feel free to browse around and contact me if you have any project in mind, or just want to say something nice.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Oh, and I almost forgot: [www.nicolasbertolino.com](https://www.nicolasbertolino.com/).
