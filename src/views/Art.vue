@@ -43,6 +43,13 @@ p {
 
 .img-right {
   grid-column: 4/7;
+}
+
+.gallery img:nth-child(1) {
+  grid-row: 1;
+}
+
+.gallery img:nth-child(2) {
   grid-row: 2;
 }
 
