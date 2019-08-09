@@ -148,7 +148,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 5rem;
+  /* gap: 5rem; */
   position: relative;
   left: calc(50% - 25vw);
 }
@@ -165,6 +165,7 @@ header {
   font-size: 3.5rem;
   position: relative;
   overflow: visible;
+  padding: 2rem 0;
 }
 
 .menu-items:hover {
