@@ -1,10 +1,8 @@
 <template>
   <header>
-    <div class="header-logo">
-      <router-link to="/">
-        <Logo />
-      </router-link>
-    </div>
+    <router-link class="header-logo" to="/">
+      <Logo />
+    </router-link>
     <div :class="{ visible: isVisible }">
       <div class="overlay">
         <div class="overlay-content" @click="myHamburger(), myMenu();">
@@ -58,8 +56,6 @@ header {
 /* Logo */
 
 .header-logo {
-  max-width: 300px;
-  height: auto;
   z-index: 2;
 }
 
