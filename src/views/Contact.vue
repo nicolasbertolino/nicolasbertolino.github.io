@@ -7,7 +7,7 @@
       <p>Dans une précédente vie, j'étudiais la sociologie et l'anthropologie. J'aime tenir compte de ce que nous apprennent les sciences humaines sur nos façons de penser et de faire des choix.</p>
       <p>Enchanté.</p>
       <p>Oh, et je m'appelle Nicolas.</p>
-      <p style="padding-top: 2rem;">Agence, freelance, particulier, dites-moi tout et lançons-le, ce projet.<a href="mailto:bertolinonicolas@gmail.com"><br />bertolinonicolas@gmail.com</a></p>
+      <p style="padding-top: 2rem;">Agence, freelance, particulier, dites-moi tout et lançons-le, ce projet.<a class="link" href="mailto:bertolinonicolas@gmail.com"><br />bertolinonicolas@gmail.com</a></p>
     </div>
   </div>
 </template>
