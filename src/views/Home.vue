@@ -4,7 +4,7 @@
       <h1>Bons sites web de France</h1>
       <p>Des sites engageants qui ne ressemblent pas à celui du voisin. Pour que votre visiteur ait le béguin et se souvienne de vous. À vous la gloire.</p>
     </div>
-    <h2>Réalisations</h2>
+    <h2>Portfolio</h2>
     <div class="projects">
       <router-link to="/projet/blackmarch" class="project">
         <p>Black March</p>

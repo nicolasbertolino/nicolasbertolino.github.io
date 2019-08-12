@@ -6,7 +6,7 @@
     <div :class="{ visible: isVisible }">
       <div class="overlay">
         <div class="overlay-content" @click="myHamburger(), myMenu();">
-          <router-link to="/" class="menu-items">Projets</router-link>
+          <router-link to="/" class="menu-items">Portfolio</router-link>
           <router-link to="/art" class="menu-items">Illustrations</router-link>
           <router-link to="/contact" class="menu-items">Contact</router-link>
         </div>
