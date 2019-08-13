@@ -5,14 +5,14 @@
     </router-link>
     <div :class="{ visible: isVisible }">
       <div class="overlay">
-        <div class="overlay-content" @click="myHamburger(), myMenu();">
+        <div class="overlay-content" @click="myMenu()">
           <router-link to="/" class="menu-items">Portfolio</router-link>
           <router-link to="/art" class="menu-items">Illustrations</router-link>
           <router-link to="/contact" class="menu-items">Contact</router-link>
         </div>
       </div>
     </div>
-    <div @click="myHamburger(), myMenu();" :class="{ active: isActive }" id="hamburger">
+    <div @click="myMenu()" :class="{ active: isActive }" id="hamburger">
       <span class="bar bar-left"></span>
       <span class="bar"></span>
       <span class="bar bar-right"></span>
@@ -34,11 +34,9 @@ export default {
     };
   },
   methods: {
-    myHamburger: function() {
-      this.isActive = !this.isActive;
-    },
     myMenu: function() {
       this.isVisible = !this.isVisible;
+      this.isActive = !this.isActive;
     }
   }
 };

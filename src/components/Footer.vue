@@ -4,7 +4,7 @@
       <p><a target="_blank" href="https://github.com/nicolasbertolino">Développement & Design</a></p>
       <p><a target="_blank" href="https://www.linkedin.com/in/nicolas-bertolino/">Nicolas Bertolino</a></p>
       <p><a href="mailto:bertolinonicolas@gmail.com">Email</a></p>
-      <p><a href="@/assets/Nicolas_Bertolino-CV.pdf" download>Curriculum Vitae</a></p>
+      <p><a target="_blank" href="https://drive.google.com/file/d/1V2bR_uSJ1Disa5ZXfciXV5TmdOTHglEH/view?usp=sharing">Curriculum Vitae</a></p>
     </footer>
   </div>
 </template>
