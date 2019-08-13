@@ -8,7 +8,7 @@
     <div class="projects">
       <router-link to="/projet/blackmarch" class="project">
         <p>Black March</p>
-        <p>Lorem ipsum.</p>
+        <p>Coming Soon</p>
         <p>Août 2019</p>
       </router-link>
       <router-link to="/projet/dataforgood" class="project">
@@ -71,6 +71,25 @@ export default {};
   .intro p {
     grid-column: 2/3;
     grid-row: 2;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .intro {
+    margin: 50px 0;
+  }
+
+  .intro h1 {
+    margin-bottom: 3rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .project p:nth-child(2) {
+    margin: 0;
   }
 }
 

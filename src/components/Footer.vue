@@ -18,7 +18,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 2rem;
+  /* column-gap: 2rem; */
   color: #999;
   padding: 20vh 3vw 10vh;
   cursor: default;
@@ -35,6 +35,12 @@ footer a:hover {
 @media screen and (max-width: 683px) {
   footer {
     justify-content: center;
+    padding-top: 10vh;
+  }
+
+  footer p {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 </style>

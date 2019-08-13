@@ -56,7 +56,14 @@ header {
 /* Logo */
 
 .header-logo {
+  width: 300px;
   z-index: 2;
+}
+
+@media screen and (max-width: 370px) {
+  .header-logo {
+    width: 250px;
+  }
 }
 
 /* Hamburger */
@@ -147,6 +154,7 @@ header {
   /* gap: 5rem; */
   position: relative;
   left: calc(50% - 25vw);
+  padding-top: 55px;
 }
 
 .menu-items {
@@ -217,6 +225,12 @@ header {
   }
 }
 
+@media screen and (max-width: 390px) {
+  .menu-items {
+    font-size: 2.5rem;
+  }
+}
+
 .visible .menu-items {
   opacity: 1;
   transform: translateY(0);
@@ -233,4 +247,11 @@ header {
 .visible .menu-items:nth-child(3) {
   transition-delay: 0.7s;
 }
+
+/* Menu items on active */
+
+.on-page.menu-items {
+  color: #fca901;
+}
+
 </style>

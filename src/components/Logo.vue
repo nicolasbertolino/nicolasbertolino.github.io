@@ -205,11 +205,6 @@ export default {};
   }
 }
 
-svg {
-  width: 300px;
-  z-index: 2;
-}
-
 #N {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
