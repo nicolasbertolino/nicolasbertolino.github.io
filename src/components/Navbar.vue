@@ -73,7 +73,7 @@ header {
 
 .bar {
   height: 2px;
-  width: 30px;
+  width: 40px;
   display: block;
   background-color: #000;
   margin-bottom: 4px;
@@ -81,11 +81,11 @@ header {
 }
 
 .bar-left {
-  width: 15px;
+  width: 20px;
 }
 
 .bar-right {
-  width: 15px;
+  width: 20px;
   float: right;
 }
 
@@ -94,11 +94,11 @@ header {
 }
 
 .active .bar-left {
-  transform: translateX(1px) rotate(45deg);
+  transform: translate(3px, -1px) rotate(45deg);
 }
 
 .active .bar-right {
-  transform: translateX(-2px) rotate(45deg);
+  transform: translate(-3px, 1px) rotate(45deg);
 }
 
 /* Menu */
