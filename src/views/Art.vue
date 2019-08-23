@@ -2,6 +2,7 @@
   <div class="art">
     <p>Oh, un peu de ci,<br />un peu de ça.</p>
     <div class="gallery">
+      <img class="img-right" src="@/assets/images/art-portrait1.jpg" />
       <img class="img-left" src="@/assets/images/art-fromabove.jpg" />
       <img class="img-right" src="@/assets/images/art-legs.jpg" />
       <img class="img-left" src="@/assets/images/art-Indianskull.jpg" />
