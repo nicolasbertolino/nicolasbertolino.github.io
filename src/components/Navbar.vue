@@ -3,19 +3,28 @@
     <router-link class="header-logo" to="/">
       <Logo />
     </router-link>
-    <div :class="{ visible: isVisible }">
-      <div class="overlay">
-        <div class="overlay-content" @click="myMenu()">
-          <router-link to="/" class="menu-items">Portfolio</router-link>
-          <router-link to="/art" class="menu-items">Illustrations</router-link>
-          <router-link to="/contact" class="menu-items">Contact</router-link>
+    <!-- Nav -->
+    <div class="nav">
+        <p><router-link to="/" class="nav-items">Portfolio</router-link></p>
+        <p><router-link to="/art" class="nav-items">Illustrations</router-link></p>
+        <p><router-link to="/contact" class="nav-items">Contact</router-link></p>
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+      <div :class="{ visible: isVisible }">
+        <div class="overlay">
+          <div class="overlay-content" @click="myMenu()">
+            <router-link to="/" class="menu-items">Portfolio</router-link>
+            <router-link to="/art" class="menu-items">Illustrations</router-link>
+            <router-link to="/contact" class="menu-items">Contact</router-link>
+          </div>
         </div>
       </div>
-    </div>
-    <div @click="myMenu()" :class="{ active: isActive }" id="hamburger">
-      <span class="bar bar-left"></span>
-      <span class="bar"></span>
-      <span class="bar bar-right"></span>
+      <div @click="myMenu()" :class="{ active: isActive }" id="hamburger">
+        <span class="bar bar-left"></span>
+        <span class="bar"></span>
+        <span class="bar bar-right"></span>
+      </div>
     </div>
   </header>
 </template>
@@ -55,12 +64,30 @@ header {
 
 .header-logo {
   width: 300px;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media screen and (max-width: 370px) {
   .header-logo {
     width: 250px;
+  }
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px;
+}
+
+.nav-items:hover {
+  color: #fca901;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    display: none;
   }
 }
 
@@ -102,6 +129,16 @@ header {
 }
 
 /* Menu */
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    display: flex;
+  }
+}
 
 .overlay {
   visibility: hidden;
@@ -248,8 +285,8 @@ header {
 
 /* Menu items on active */
 
-.on-page.menu-items {
+.on-page.menu-items,
+.on-page.nav-items {
   color: #fca901;
 }
-
 </style>
