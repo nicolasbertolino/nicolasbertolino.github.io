@@ -106,7 +106,7 @@ export default {};
 }
 
 .project:hover {
-  color: #fca901;
+  color: #d06255;
 }
 
 .project p:nth-child(2) {

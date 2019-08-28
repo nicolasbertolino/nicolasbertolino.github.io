@@ -29,7 +29,7 @@ footer p {
 }
 
 footer a:hover {
-  color: #fca901;
+  color: #d06255;
 }
 
 @media screen and (max-width: 683px) {

@@ -40,7 +40,7 @@ export default {};
 }
 
 .contact-text a {
-  color: #fca901;
+  color: #d06255;
 }
 
 @media screen and (max-width: 1205px) {

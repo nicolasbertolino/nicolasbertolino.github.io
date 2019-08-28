@@ -22,6 +22,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: #faf3dd;
   color: #282828;
   position: relative;
 }
@@ -54,7 +55,7 @@ h1 {
   letter-spacing: 1px;
   line-height: 1.1;
   margin: 0 0 10rem;
-  border-bottom: 0.5rem solid #fca901;
+  border-bottom: 0.5rem solid #d06255;
 }
 
 h2 {
@@ -95,7 +96,7 @@ h5 {
 }
 
 h5 span {
-  color: #fca901;
+  color: #d06255;
 }
 
 p {
@@ -215,5 +216,5 @@ a {
 }
 
 .next-project a:hover {
-  color: #fca901 !important;
+  color: #d06255 !important;
 }

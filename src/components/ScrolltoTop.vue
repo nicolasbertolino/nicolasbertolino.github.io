@@ -23,7 +23,7 @@ export default {
 }
 
 .scrolltotop:hover {
-  color: #fca901;
+  color: #d06255;
 }
 
 .scrolltotop p {

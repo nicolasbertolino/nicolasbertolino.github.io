@@ -82,7 +82,7 @@ header {
 }
 
 .nav-items:hover {
-  color: #fca901;
+  color: #d06255;
 }
 
 @media screen and (max-width: 1000px) {
@@ -148,7 +148,7 @@ header {
   height: 0;
   width: 100%;
   z-index: 1;
-  background-color: #fca901;
+  background-color: #d06255;
   transition: cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
   transition-delay: 0.1s;
 }
@@ -208,7 +208,7 @@ header {
 }
 
 .menu-items:hover {
-  color: #fca901;
+  color: #d06255;
 }
 
 .menu-items:nth-child(1)::after,
@@ -287,6 +287,6 @@ header {
 
 .on-page.menu-items,
 .on-page.nav-items {
-  color: #fca901;
+  color: #d06255;
 }
 </style>
