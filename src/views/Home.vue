@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <div class="intro">
-      <h1>Bons sites web de France</h1>
+      <h1>Folio — 19</h1>
       <p>Des sites engageants qui ne ressemblent pas à celui du voisin. Pour que votre visiteur ait le béguin et se souvienne de vous. À vous la gloire.</p>
     </div>
-    <h2>Portfolio</h2>
+    <h2>Projets</h2>
     <div class="projects">
       <router-link to="/projet/blackmarch" class="project">
         <p>Black March</p>
