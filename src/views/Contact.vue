@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <img src="" />
+    <img src="@/assets/images/me.png" />
     <div class="contact-text">
       <p>Un jour, mon cerveau gauche et mon cerveau droit ont signé un pacte de coopération.</p>
       <p>Depuis je développe et design des sites, d'abord à Toulouse, mais aussi partout en France.</p>
@@ -27,12 +27,11 @@ export default {};
 .contact img {
   grid-column: 2/3;
   width: 100%;
-  height: 700px;
 }
 
 .contact-text {
   grid-column: 3/4;
-  place-self: end center;
+  place-self: center start;
 }
 
 .contact-text p {
