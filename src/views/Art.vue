@@ -7,7 +7,7 @@
       <img class="img-left" src="@/assets/images/art-fromabove.jpg" />
       <img class="img-right" src="@/assets/images/art-legs.jpg" />
       <img class="img-left" src="@/assets/images/art-crystalball.jpg" />
-      <img class="img-right" src="@/assets/images/art-Indianskull.jpg" />
+      <img class="img-right" src="@/assets/images/art-indianskull.jpg" />
     </div>
   <ScrolltoTop />
   </div>
