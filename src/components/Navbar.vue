@@ -161,7 +161,7 @@ header {
   left: 0;
   width: 100%;
   height: 0;
-  background-color: #fff;
+  background-color: #f5efe1;
   transition: cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
 }
 
