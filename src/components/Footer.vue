@@ -14,11 +14,10 @@ export default {};
 </script>
 
 <style>
-footer {
+/* footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* column-gap: 2rem; */
   color: #999;
   padding: 20vh 3vw 10vh;
   cursor: default;
@@ -42,5 +41,5 @@ footer a:hover {
     margin-left: 1rem;
     margin-right: 1rem;
   }
-}
+} */
 </style>

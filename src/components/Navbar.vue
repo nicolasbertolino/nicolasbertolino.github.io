@@ -52,13 +52,13 @@ export default {
 </script>
 
 <style>
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 110px;
   padding: 0 3vw;
-}
+} */
 
 /* Logo */
 

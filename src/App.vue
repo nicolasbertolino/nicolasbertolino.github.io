@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <Navbar />
+    <!-- <Navbar /> -->
     <transition name="view">
       <router-view />
     </transition>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 

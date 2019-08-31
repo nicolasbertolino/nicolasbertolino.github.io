@@ -9,7 +9,7 @@
       <p></p>
     </div>
     <div class="projet-showcase">
-      <img src="@/assets/images/dataforgood.jpg">
+      <img src="@/assets/images/dataforgood1.jpg">
       <div class="projet-infos">
         <p><span>Date</span><span>Juin 2019</span></p>
         <p><span>Lien vers le site</span><span><a class="link" target="_blank" href="https://dataforgood.fr/">dataforgood.fr</a></span></p>

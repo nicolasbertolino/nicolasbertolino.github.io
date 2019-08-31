@@ -1,6 +1,6 @@
 <template>
   <div @click="topFunction()" class="scrolltotop">
-    <p>&#10230</p>
+    <p class="b-link">(Retour en haut)</p>
   </div>
 </template>
 
@@ -17,17 +17,13 @@ export default {
 <style>
 .scrolltotop {
   position: absolute;
-  bottom: 20vh;
-  right: 2.5vw;
+  bottom: 18px;
+  left: 3vw;
   cursor: pointer;
 }
 
-.scrolltotop:hover {
-  color: #d06255;
-}
-
 .scrolltotop p {
-  transform: rotate(-90deg);
-  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
 }
 </style>

@@ -8,8 +8,11 @@
   src: url("../fonts/Freight\ Text.otf") format("truetype");
 }
 
+@import url("https://fonts.googleapis.com/css?family=Cormorant&display=swap");
+@import url("https://use.typekit.net/cfj0zjm.css");
+
 #app {
-  font-family: "FF Mark", Arial, sans-serif;
+  font-family: proxima-nova, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -22,16 +25,12 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: #f5efe1;
+  background-color: #faf3dd;
   color: #282828;
   position: relative;
 }
 
-::selection {
-  background: #282828;
-  color: #ffffff;
-}
-
+::selection,
 ::-moz-selection {
   background: #282828;
   color: #ffffff;
@@ -49,42 +48,20 @@ body {
 }
 
 h1 {
-  font-family: "Freight Text";
-  font-size: calc(8rem + 3vw);
+  font-family: kumlien-pro, serif;
   font-weight: normal;
-  letter-spacing: 1px;
-  line-height: 1.1;
-  margin: 0 0 10rem;
-  border-bottom: 0.5rem solid #d06255;
+  font-size: 26vw;
+  margin: 10vh 0 0 -10px;
+  line-height: 0.9;
+  cursor: default;
 }
 
 h2 {
-  font-family: "Freight Text";
-  font-size: 3.5rem;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin-left: 3vw;
-  margin-bottom: 5vh;
-}
-
-h3 {
-  font-family: "Freight Text";
-  font-size: calc(1.5rem + 3vw);
-  width: 60vw;
-  margin: 0 auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-h4 {
-  font-family: "Freight Text";
-  font-size: 2rem;
-  letter-spacing: 1px;
-  font-weight: normal;
-  margin: 0 10vw;
+  font-family: kumlien-pro, serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.1;
+  max-width: 70vw;
 }
 
 h5 {
@@ -100,16 +77,48 @@ h5 span {
 }
 
 p {
-  font-size: 1.4rem;
+  /* font-weight: 300; */
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 a {
-  text-decoration: none;
+  position: relative;
   color: inherit;
+  text-decoration: none;
+  /* overflow: hidden; */
 }
 
-.link:hover {
-  border-bottom: 2px solid;
+.a-link::before,
+.b-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #282828;
+  transition: transform 0.4s ease-out;
+}
+
+.a-link::before {
+  transform:scaleX(1);
+  transform-origin:left
+}
+
+.b-link::before {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.a-link:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.b-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /* Pages projets */
