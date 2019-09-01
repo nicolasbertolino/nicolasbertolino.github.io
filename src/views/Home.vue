@@ -129,6 +129,32 @@ header div:nth-child(2) {
   justify-self: end;
 }
 
+@media screen and (max-width: 1000px) {
+  header div:nth-child(1) {
+    grid-column: 1/3;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    text-align: center;
+    margin-top: 5vw;
+  }
+
+  header div:nth-child(1) {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  header div:nth-child(2) {
+    grid-column: 1;
+    justify-self: center;
+  }
+}
+
 /* Highlighted Project */
 .highlight {
   position: relative;
@@ -165,6 +191,35 @@ header div:nth-child(2) {
   max-width: 400px;
 }
 
+@media screen and (max-width: 1400px) {
+  .infos {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .show {
+    top: 20vw;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .infos {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .show {
+    top: 0;
+  }
+
+  .show h1 {
+    margin: 5vh 0 0;
+  }
+}
+
 /* Portfolio */
 .portfolio {
   display: grid;
@@ -199,7 +254,20 @@ header div:nth-child(2) {
 .whoami p {
   margin: .5rem 0;
   max-width: 500px;
-  /* font-weight: 300; */
+}
+
+@media screen and (max-width: 680px) {
+  .whoami {
+    grid-template-columns: 1fr;
+  }
+
+  .whoami div:nth-child(2) {
+    place-self: center;
+  }
+
+  .whoami p {
+    max-width: 100%;
+  }
 }
 
 /* Contact */

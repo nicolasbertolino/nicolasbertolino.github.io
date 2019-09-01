@@ -1,27 +1,15 @@
 <template>
   <div id="app">
-    <!-- <Navbar /> -->
     <transition name="view">
       <router-view />
     </transition>
-    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue";
 
-export default {
-  components: {
-    Navbar,
-    Footer
-  },
-  methods: {
-    
-  }
-};
+export default {};
 
 
 </script>
@@ -30,7 +18,6 @@ export default {
 @import "./assets/css/style.css";
 
 /* Pages transition */
-
 .page {
   width: 100%;
 }

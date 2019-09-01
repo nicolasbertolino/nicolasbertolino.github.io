@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "FF Mark";
-  src: url("../fonts/FFMark.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Freight Text";
-  src: url("../fonts/Freight\ Text.otf") format("truetype");
-}
-
 @import url("https://fonts.googleapis.com/css?family=Cormorant&display=swap");
 @import url("https://use.typekit.net/cfj0zjm.css");
 
@@ -47,6 +37,7 @@ body {
   outline: none;
 }
 
+/* Titles */
 h1 {
   font-family: kumlien-pro, serif;
   font-weight: normal;
@@ -64,29 +55,30 @@ h2 {
   max-width: 70vw;
 }
 
-h5 {
-  text-align: center;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+@media screen and (max-width: 680px) {
+  h2 {
+    max-width: 100%;
+  }
 }
 
-h5 span {
-  color: #d06255;
-}
-
+/* Paragraphs */
 p {
-  /* font-weight: 300; */
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 630px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Anchor links */
 a {
   position: relative;
   color: inherit;
   text-decoration: none;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .a-link::before,
@@ -119,111 +111,4 @@ a {
 .b-link:hover::before {
   transform: scaleX(1);
   transform-origin: left;
-}
-
-/* Pages projets */
-
-.projet-title {
-  min-height: calc(100vh - 110px);
-  position: relative;
-}
-
-.projet-presentation {
-  display: grid;
-  grid-template-columns: 3vw 1fr 1fr 3vw;
-  margin-top: 5vh;
-  margin-bottom: 8vh;
-}
-
-.projet-presentation h4 {
-  grid-column: 2/3;
-  max-width: 250px;
-  justify-self: center;
-}
-
-.projet-presentation p {
-  grid-column: 3/3;
-  grid-row: 2;
-  max-width: 600px;
-  margin: 0;
-}
-
-@media screen and (max-width: 950px) {
-  .projet-presentation {
-    grid-template-columns: 3vw 1fr 3vw;
-  }
-
-  .projet-presentation h4 {
-    grid-row: 2;
-    text-align: center;
-    max-width: 100%;
-    margin-top: 10vh;
-  }
-
-  .projet-presentation p {
-    grid-row: 1;
-    grid-column: 2/3;
-    justify-self: center;
-    text-align: justify;
-  }
-}
-
-.projet-showcase {
-  display: grid;
-  grid-template-columns: 10vw 1fr 10vw;
-  grid-row-gap: 10vh;
-  margin-top: 10vh;
-}
-
-.projet-showcase img {
-  width: 100%;
-  grid-column: 2/3;
-}
-
-#projet-img-responsive {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 950px) {
-  .projet-showcase {
-    grid-template-columns: 3vw 1fr 3vw;
-  }
-}
-
-.projet-infos {
-  grid-column: 2/3;
-}
-
-.projet-infos p {
-  display: flex;
-  justify-content: space-between;
-}
-
-.projet-infos p:nth-child(1) {
-  border-bottom: 2px solid;
-  padding-bottom: 19px;
-}
-
-@media screen and (max-width: 697px) {
-  .projet-infos p {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 0.5rem;
-  }
-}
-
-.next-project {
-  justify-self: center;
-  grid-column: 2/3;
-  margin-top: 10vh;
-}
-
-.next-project a {
-  color: #282828 !important;
-}
-
-.next-project a:hover {
-  color: #d06255 !important;
 }
