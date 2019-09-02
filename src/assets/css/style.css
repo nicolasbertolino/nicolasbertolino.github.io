@@ -41,9 +41,10 @@ body {
 h1 {
   font-family: kumlien-pro, serif;
   font-weight: normal;
-  font-size: 25vw;
-  margin: 10vh 0 0 -10px;
+  font-size: 25.3vw;
   line-height: 0.9;
+  text-align: center;
+  margin: 10vh 0 0 -10px;
   cursor: default;
 }
 
@@ -53,6 +54,19 @@ h2 {
   font-size: 3rem;
   line-height: 1.1;
   max-width: 70vw;
+}
+
+h3 {
+  font-family: kumlien-pro, serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+@media screen and (max-width: 630px) {
+  h3 {
+    font-size: 7vw;
+  }
 }
 
 @media screen and (max-width: 680px) {

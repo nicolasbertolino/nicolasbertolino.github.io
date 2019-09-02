@@ -16,7 +16,7 @@
       <img src="@/assets/images/highlightimg.jpg" />
       <div class="show">
         <p>Lumière sur</p>
-        <h1>Les<br />p'tits coquelicots</h1>
+        <h1 style="text-align: left;">Les<br />p'tits coquelicots</h1>
         <div class="infos">
           <p><a class="a-link" target="_blank" href="https://www.lesptitscoquelicots.com/">Voir le site en ligne</a></p>
           <div>
@@ -28,7 +28,7 @@
       </div>
     </div>
     <!--  -->
-    <h1 style="font-size: 24vw; text-align: center;">Création Digitale</h1>
+    <h1 style="font-size: 24vw;">Création Digitale</h1>
     <div class="portfolio">
       <img src="@/assets/images/blackmarch.jpg" />
       <img src="@/assets/images/dataforgood.jpg" />
@@ -79,7 +79,7 @@
     <!--  -->
     <h1 style="font-size: 23vw;">Enchanté</h1>
     <p>Agence, freelance, particulier, dites-moi tout et lançons-le, ce projet.</p>
-    <h2><a class="b-link" href="mailto:bertolinonicolas@gmail.com">bertolinonicolas@gmail.com</a></h2>
+    <h3><a class="b-link" href="mailto:bertolinonicolas@gmail.com">bertolinonicolas@gmail.com</a></h3>
     <ul>
       <li><a class="b-link" target="_blank" href="https://drive.google.com/file/d/1V2bR_uSJ1Disa5ZXfciXV5TmdOTHglEH/view?usp=sharing">Curriculum Vitae</a></li>
       <li><a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a></li>
@@ -235,6 +235,13 @@ header div:nth-child(2) {
 
 .portfolio img:hover {
   filter: brightness(.8)
+}
+
+
+@media screen and (max-width: 550px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Who Am I */
