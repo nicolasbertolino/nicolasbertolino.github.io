@@ -30,40 +30,58 @@
     <!--  -->
     <h1 style="font-size: 24vw;">Création Digitale</h1>
     <div class="portfolio">
-      <img src="@/assets/images/blackmarch.jpg" />
-      <img src="@/assets/images/dataforgood.jpg" />
-      <img src="@/assets/images/liebr.jpg" />
-      <img src="@/assets/images/terrefete.jpg" />
-      <img src="@/assets/images/lesptitscoquelicots.jpg" />
+      <div class="portfolio-item">
+        <img src="@/assets/images/blackmarch.jpg" />
+        <div>
+          <p style="text-align: center;">.</p>
+          <p></p>
+          <h3>Black March</h3>
+          <p></p>
+          <p style="text-align: center;">Coming Soon</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="@/assets/images/dataforgood.jpg" />
+        <div>
+          <p></p>
+          <p>Juin 2019</p>
+          <h3>Data for Good</h3>
+          <p>Le numérique au service de l'intérêt général</p>
+          <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/DataforGood/">Voir le site en ligne</a></p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+         <img src="@/assets/images/liebr.jpg" />
+         <div>
+           <p></p>
+           <p>Déc. 2018</p>
+           <h3>Liebr</h3>
+           <p>Trouver le bon mécanicien n'a jamais été aussi simple</p>
+           <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/Liebr/">Voir le site en ligne</a></p>
+         </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="@/assets/images/terrefete.jpg" />
+        <div>
+          <p></p>
+          <p>Mars 2019</p>
+          <h3>Terrefète</h3>
+          <p>Les montagnes comme compagnes</p>
+          <p><a class="a-link" target="_blank" href="https://www.terrefete.com/">Voir le site en ligne</a></p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="@/assets/images/lesptitscoquelicots.jpg" />
+        <div>
+          <p></p>
+          <p>Sept. 2018</p>
+          <h3>Les p'tits coquelicots</h3>
+          <p>Ardeur fragile, aimons-nous au plus tôt</p>
+          <p><a class="a-link" target="_blank" href="https://www.lesptitscoquelicots.com/">Voir le site en ligne</a></p>
+        </div>
+      </div>
     </div>
     <!--  -->
-    <!-- <div class="projects">
-      <a target="_blank" class="project">
-        <p>Black March</p>
-        <p>Coming Soon</p>
-        <p>Août 2019</p>
-      </a>
-      <a target="_blank" href="https://nicolasbertolino.github.io/DataforGood/" class="project">
-        <p>Data for Good</p>
-        <p>Le numérique au service de l'intérêt général.</p>
-        <p>Juin 2019</p>
-      </a>
-      <a target="_blank" href="https://nicolasbertolino.github.io/Liebr/" class="project">
-        <p>Liebr</p>
-        <p>Trouver le bon mécanicien n'a jamais été aussi simple.</p>
-        <p>Mars 2019</p>
-      </a>
-      <a target="_blank" href="https://www.terrefete.com/" class="project">
-        <p>Terrefète</p>
-        <p>Les montagnes comme compagnes.</p>
-        <p>Déc. 2018</p>
-      </a>
-      <a target="_blank" href="https://www.lesptitscoquelicots.com/" class="project">
-        <p>Les p'tits coquelicots</p>
-        <p>Ardeur fragile, aimons-nous au plus tôt.</p>
-        <p>Sept. 2018</p>
-      </a>
-    </div> -->
     <h1 style="font-size: 24vw; text-align: right;">Basé à Toulouse</h1>
     <h2>Des sites engageants qui ne ressemblent pas à celui du voisin. Pour que votre visiteur ait le béguin et se souvienne de vous. À vous la gloire.</h2>
     <div class="whoami">
@@ -117,6 +135,10 @@ header {
 
 header p {
   margin: 0;
+}
+
+header .a-link::before {
+  background: #282828;
 }
 
 header div:nth-child(1) {
@@ -183,10 +205,6 @@ header div:nth-child(2) {
   margin-top: 4rem;
 }
 
-.infos .a-link::before {
-  background: #faf3dd;
-}
-
 .infos div {
   max-width: 400px;
 }
@@ -228,15 +246,42 @@ header div:nth-child(2) {
   margin-top: -10vw;
 }
 
+.portfolio-item {
+ position: relative;
+}
+
 .portfolio img {
   max-width: 100%;
-  transition: filter .4s;
 }
 
-.portfolio img:hover {
-  filter: brightness(.8)
+.portfolio-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 4px;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity .4s;
 }
 
+.portfolio-item:hover::after {
+  opacity: .3;
+}
+
+.portfolio-item div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #faf3dd;
+  z-index: 1;
+}
+
+.portfolio-item div p:nth-child(4) {
+  font-style: italic;
+}
 
 @media screen and (max-width: 550px) {
   .portfolio {

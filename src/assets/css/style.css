@@ -103,16 +103,17 @@ a {
   bottom: 0;
   height: 1px;
   width: 100%;
-  background: #282828;
   transition: transform 0.4s ease-out;
 }
 
 .a-link::before {
+  background: #faf3dd;
   transform:scaleX(1);
   transform-origin:left
 }
 
 .b-link::before {
+  background: #282828;
   transform: scaleX(0);
   transform-origin: right;
 }
