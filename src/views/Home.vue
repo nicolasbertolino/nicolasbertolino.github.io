@@ -54,7 +54,7 @@
          <img src="@/assets/images/liebr.jpg" />
          <div>
            <p></p>
-           <p>Déc. 2018</p>
+           <p>Mars 2019</p>
            <h3>Liebr</h3>
            <p>Trouver le bon mécanicien n'a jamais été aussi simple</p>
            <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/Liebr/">Voir le site en ligne</a></p>
@@ -64,7 +64,7 @@
         <img src="@/assets/images/terrefete.jpg" />
         <div>
           <p></p>
-          <p>Mars 2019</p>
+          <p>Déc. 2018</p>
           <h3>Terrefète</h3>
           <p>Les montagnes comme compagnes</p>
           <p><a class="a-link" target="_blank" href="https://www.terrefete.com/">Voir le site en ligne</a></p>
@@ -248,6 +248,7 @@ header div:nth-child(2) {
 
 .portfolio-item {
  position: relative;
+ cursor: default;
 }
 
 .portfolio img {
