@@ -86,12 +86,11 @@
     <h2>Des sites engageants qui ne ressemblent pas à celui du voisin. Pour que votre visiteur ait le béguin et se souvienne de vous. À vous la gloire.</h2>
     <div class="whoami">
       <div>
-        <img src="@/assets/images/me.png" />
+        <p>Un jour, mon cerveau gauche et mon cerveau droit ont signé un pacte de coopération. Depuis je développe et design des sites, d'abord à Toulouse, mais aussi partout en France.</p>
+        <p>Dans une précédente vie, j'étudiais la sociologie et l'anthropologie. J'aime tenir compte de ce que nous apprennent les sciences humaines sur nos façons de penser et de faire des choix.</p>
       </div>
       <div>
-        <p>Un jour, mon cerveau gauche et mon cerveau droit ont signé un pacte de coopération.</p>
-        <p>Depuis je développe et design des sites, d'abord à Toulouse, mais aussi partout en France.</p>
-        <p>Dans une précédente vie, j'étudiais la sociologie et l'anthropologie. J'aime tenir compte de ce que nous apprennent les sciences humaines sur nos façons de penser et de faire des choix.</p>
+        <img src="@/assets/images/me2.png" />
       </div>
     </div>
     <!--  -->
@@ -300,22 +299,13 @@ header div:nth-child(2) {
   width: 100%;
 }
 
-.whoami div:nth-child(2) {
-  place-self: center start;
-}
-
 .whoami p {
   margin: .5rem 0;
-  max-width: 500px;
 }
 
 @media screen and (max-width: 680px) {
   .whoami {
     grid-template-columns: 1fr;
-  }
-
-  .whoami div:nth-child(2) {
-    place-self: center;
   }
 
   .whoami p {
