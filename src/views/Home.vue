@@ -300,16 +300,12 @@ header div:nth-child(2) {
 }
 
 .whoami p {
-  margin: .5rem 0;
+  margin-bottom: .5rem;
 }
 
 @media screen and (max-width: 680px) {
   .whoami {
     grid-template-columns: 1fr;
-  }
-
-  .whoami p {
-    max-width: 100%;
   }
 }
 
