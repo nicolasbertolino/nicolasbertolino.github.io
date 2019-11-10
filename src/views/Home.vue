@@ -33,8 +33,7 @@
       <div class="portfolio-item">
         <img src="@/assets/images/blackmarch.jpg" />
         <div>
-          <p style="text-align: center;">.</p>
-          <p></p>
+          <p style="color: transparent;">.</p>
           <h3>Black March</h3>
           <p></p>
           <p style="text-align: center;">Coming Soon</p>
@@ -43,8 +42,6 @@
       <div class="portfolio-item">
         <img src="@/assets/images/dataforgood.jpg" />
         <div>
-          <p></p>
-          <p>Juin 2019</p>
           <h3>Data for Good</h3>
           <p>Le numérique au service de l'intérêt général</p>
           <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/DataforGood/">Voir le site en ligne</a></p>
@@ -53,8 +50,6 @@
       <div class="portfolio-item">
          <img src="@/assets/images/liebr.jpg" />
          <div>
-           <p></p>
-           <p>Mars 2019</p>
            <h3>Liebr</h3>
            <p>Trouver le bon mécanicien n'a jamais été aussi simple</p>
            <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/Liebr/">Voir le site en ligne</a></p>
@@ -63,8 +58,6 @@
       <div class="portfolio-item">
         <img src="@/assets/images/terrefete.jpg" />
         <div>
-          <p></p>
-          <p>Déc. 2018</p>
           <h3>Terrefète</h3>
           <p>Les montagnes comme compagnes</p>
           <p><a class="a-link" target="_blank" href="https://www.terrefete.com/">Voir le site en ligne</a></p>
@@ -73,11 +66,10 @@
       <div class="portfolio-item">
         <img src="@/assets/images/lesptitscoquelicots.jpg" />
         <div>
-          <p></p>
-          <p>Sept. 2018</p>
           <h3>Les p'tits coquelicots</h3>
           <p>Ardeur fragile, aimons-nous au plus tôt</p>
           <p><a class="a-link" target="_blank" href="https://www.lesptitscoquelicots.com/">Voir le site en ligne</a></p>
+          <!-- <p><a class="a-link" target="_blank" href="#">Le projet</a></p> -->
         </div>
       </div>
     </div>
@@ -277,10 +269,6 @@ header div:nth-child(2) {
   transform: translate(-50%, -50%);
   color: #faf3dd;
   z-index: 1;
-}
-
-.portfolio-item div p:nth-child(4) {
-  font-style: italic;
 }
 
 @media screen and (max-width: 550px) {
