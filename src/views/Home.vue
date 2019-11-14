@@ -92,7 +92,7 @@
     <ul>
       <li><a class="b-link" target="_blank" href="https://drive.google.com/file/d/1V2bR_uSJ1Disa5ZXfciXV5TmdOTHglEH/view?usp=sharing">Curriculum Vitae</a></li>
       <li><a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a></li>
-      <li><a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolas-bertolino">Linkedin</a></li>
+      <li><a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolasbertolino">Linkedin</a></li>
       <li><a class="b-link" target="_blank" href="https://www.behance.net/nicolasbertolino">Behance</a></li>
     </ul>
     <!--  -->
