@@ -44,7 +44,7 @@
         <div>
           <h3>Data for Good</h3>
           <p>Le numérique au service de l'intérêt général</p>
-          <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/DataforGood/">Voir le site en ligne</a></p>
+          <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/DataforGood/">Voir le projet</a></p>
         </div>
       </div>
       <div class="portfolio-item">
@@ -52,7 +52,7 @@
          <div>
            <h3>Liebr</h3>
            <p>Trouver le bon mécanicien n'a jamais été aussi simple</p>
-           <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/Liebr/">Voir le site en ligne</a></p>
+           <p><a class="a-link" target="_blank" href="https://nicolasbertolino.github.io/Liebr/">Voir le projet</a></p>
          </div>
       </div>
       <div class="portfolio-item">
@@ -60,7 +60,7 @@
         <div>
           <h3>Terrefète</h3>
           <p>Les montagnes comme compagnes</p>
-          <p><a class="a-link" target="_blank" href="https://www.terrefete.com/">Voir le site en ligne</a></p>
+          <p><a class="a-link" target="_blank" href="https://www.terrefete.com/">Voir le projet</a></p>
         </div>
       </div>
       <div class="portfolio-item">
@@ -68,7 +68,7 @@
         <div>
           <h3>Les p'tits coquelicots</h3>
           <p>Ardeur fragile, aimons-nous au plus tôt</p>
-          <p><a class="a-link" target="_blank" href="https://www.lesptitscoquelicots.com/">Voir le site en ligne</a></p>
+          <p><a class="a-link" target="_blank" href="https://www.lesptitscoquelicots.com/">Voir le projet</a></p>
           <!-- <p><a class="a-link" target="_blank" href="#">Le projet</a></p> -->
         </div>
       </div>
@@ -90,7 +90,7 @@
     <p>Agence, freelance, particulier, dites-moi tout et lançons-le, ce projet.</p>
     <h3><a class="b-link" href="mailto:bertolinonicolas@gmail.com">bertolinonicolas@gmail.com</a></h3>
     <ul>
-      <li><a class="b-link" target="_blank" href="https://drive.google.com/file/d/1V2bR_uSJ1Disa5ZXfciXV5TmdOTHglEH/view?usp=sharing">Curriculum Vitae</a></li>
+      <!-- <li><a class="b-link" target="_blank" href="https://drive.google.com/file/d/1V2bR_uSJ1Disa5ZXfciXV5TmdOTHglEH/view?usp=sharing">Curriculum Vitae</a></li> -->
       <li><a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a></li>
       <li><a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolasbertolino">Linkedin</a></li>
       <li><a class="b-link" target="_blank" href="https://www.behance.net/nicolasbertolino">Behance</a></li>
@@ -303,12 +303,15 @@ ul {
   padding: 0;
   text-transform: uppercase;
   font-size: 1.2rem;
-  margin: 5vh 0;
 }
 
-ul li:nth-child(1) {
-  margin-bottom: 1rem;
+ul li {
+  margin: 0.5em 0;
 }
+
+/* ul li:nth-child(1) {
+  margin-bottom: 1rem;
+} */
 
 /* Footer */
 footer {
