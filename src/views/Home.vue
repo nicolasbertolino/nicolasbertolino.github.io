@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Folio—19</h1>
+    <h1>Folio—20</h1>
     <!--  -->
     <header>
       <div>
@@ -97,7 +97,7 @@
     </ul>
     <!--  -->
     <footer>
-      <h2>©2019</h2>
+      <h2>©2020</h2>
     </footer>
     <ScrolltoTop />
   </main>
