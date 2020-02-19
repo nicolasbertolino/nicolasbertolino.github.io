@@ -1,7 +1,6 @@
 <template>
   <main>
-    <h1>Folio—20</h1>
-    <!--  -->
+    <!-- <h1>Folio—20</h1>
     <header>
       <div>
         <p>Nicolas Bertolino</p>
@@ -11,7 +10,6 @@
         <p>Disponible pour un projet<br /><a class="a-link" href="mailto:bertolinonicolas@gmail.com">bertolinonicolas@gmail.com</a></p>
       </div>
     </header>
-    <!--  -->
     <div class="highlight">
       <img src="@/assets/images/highlightimg.jpg" />
       <div class="show">
@@ -27,7 +25,6 @@
         </div>
       </div>
     </div>
-    <!--  -->
     <h1 style="font-size: 24vw;">Création Digitale</h1>
     <div class="portfolio">
       <div class="portfolio-item">
@@ -69,11 +66,9 @@
           <h3>Les p'tits coquelicots</h3>
           <p>Ardeur fragile, aimons-nous au plus tôt</p>
           <p><a class="a-link" target="_blank" href="https://www.lesptitscoquelicots.com/">Voir le projet</a></p>
-          <!-- <p><a class="a-link" target="_blank" href="#">Le projet</a></p> -->
         </div>
       </div>
     </div>
-    <!--  -->
     <h1 style="font-size: 24vw; text-align: right;">Basé à Toulouse</h1>
     <h2>Des sites engageants qui ne ressemblent pas à celui du voisin. Pour que votre visiteur ait le béguin et se souvienne de vous. À vous la gloire.</h2>
     <div class="whoami">
@@ -85,37 +80,68 @@
         <img src="@/assets/images/me2.png" />
       </div>
     </div>
-    <!--  -->
     <h1 style="font-size: 23vw;">Enchanté</h1>
     <p>Agence, freelance, particulier, dites-moi tout et lançons-le, ce projet.</p>
     <h3><a class="b-link" href="mailto:bertolinonicolas@gmail.com">bertolinonicolas@gmail.com</a></h3>
     <ul>
-      <!-- <li><a class="b-link" target="_blank" href="https://drive.google.com/file/d/1V2bR_uSJ1Disa5ZXfciXV5TmdOTHglEH/view?usp=sharing">Curriculum Vitae</a></li> -->
-      <li><a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a></li>
-      <li><a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolasbertolino">Linkedin</a></li>
-      <li><a class="b-link" target="_blank" href="https://www.behance.net/nicolasbertolino">Behance</a></li>
+      <li>
+        <a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a>
+      </li>
+      <li>
+        <a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolasbertolino">Linkedin</a>
+      </li>
+      <li>
+        <a class="b-link" target="_blank" href="https://www.behance.net/nicolasbertolino">Behance</a>
+      </li>
     </ul>
-    <!--  -->
     <footer>
       <h2>©2020</h2>
-    </footer>
-    <ScrolltoTop />
+    </footer> -->
+    <h5>Coming Soon</h5>
+    <ul>
+      <li>
+        <a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a>
+      </li>
+      <li>
+        <a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolasbertolino">Linkedin</a>
+      </li>
+      <li>
+        <a class="b-link" target="_blank" href="https://www.behance.net/nicolasbertolino">Behance</a>
+      </li>
+    </ul>
+    <!-- <ScrolltoTop /> -->
   </main>
 </template>
 
 <script>
-import ScrolltoTop from "@/components/ScrolltoTop.vue";
+// import ScrolltoTop from "@/components/ScrolltoTop.vue";
 
 export default {
   components: {
-    ScrolltoTop
+    // ScrolltoTop
   }
 };
 </script>
 
 <style>
 main {
-  margin: 0 3vw;
+  margin: 0 10vw;
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  font-family: tenez, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: calc(5rem + 5vw);
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 2.2rem;
+  border-bottom: 5px solid;
 }
 
 /* Header */
@@ -238,8 +264,8 @@ header div:nth-child(2) {
 }
 
 .portfolio-item {
- position: relative;
- cursor: default;
+  position: relative;
+  cursor: default;
 }
 
 .portfolio img {
@@ -255,11 +281,11 @@ header div:nth-child(2) {
   left: 0;
   background-color: #000;
   opacity: 0;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
 }
 
 .portfolio-item:hover::after {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .portfolio-item div {
@@ -288,7 +314,7 @@ header div:nth-child(2) {
 }
 
 .whoami p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -303,6 +329,9 @@ ul {
   padding: 0;
   text-transform: uppercase;
   font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
 }
 
 ul li {
@@ -319,7 +348,7 @@ footer {
 }
 
 footer h2 {
-  text-align:right;
+  text-align: right;
   max-width: 100%;
 }
 </style>
