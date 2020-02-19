@@ -100,13 +100,28 @@
     <h5>Coming Soon</h5>
     <ul>
       <li>
-        <a class="b-link" target="_blank" href="https://github.com/nicolasbertolino">Github</a>
+        <a
+          class="b-link"
+          target="_blank"
+          href="https://github.com/nicolasbertolino"
+          >Github</a
+        >
       </li>
       <li>
-        <a class="b-link" target="_blank" href="https://www.linkedin.com/in/nicolasbertolino">Linkedin</a>
+        <a
+          class="b-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/nicolasbertolino"
+          >Linkedin</a
+        >
       </li>
       <li>
-        <a class="b-link" target="_blank" href="https://www.behance.net/nicolasbertolino">Behance</a>
+        <a
+          class="b-link"
+          target="_blank"
+          href="https://www.behance.net/nicolasbertolino"
+          >Behance</a
+        >
       </li>
     </ul>
     <!-- <ScrolltoTop /> -->
