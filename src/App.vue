@@ -10,8 +10,6 @@
 // @ is an alias to /src
 
 export default {};
-
-
 </script>
 
 <style>
@@ -24,11 +22,11 @@ export default {};
 
 .view-enter-active,
 .view-leave-active {
-  transition: opacity .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .view-enter-active {
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 
 .view-enter,
