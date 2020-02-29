@@ -1,0 +1,119 @@
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: proxima-nova, sans-serif;
+  background-color: var(--background);
+  color: var(--black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+/* ::-moz-selection {
+  background: whitesmoke;
+  color: #282828;
+}
+
+::selection {
+  background: whitesmoke;
+  color: #282828;
+} */
+
+:root {
+  --background: #faf3dd;
+  --background2: #eddfc9;
+  --black: #444444;
+}
+
+h1 {
+  font-family: tenez, sans-serif;
+  font-size: 20vw;
+  line-height: 1;
+}
+
+/* Anchor links */
+a {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.a-link::before,
+.b-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  transition: transform 0.4s ease-out;
+}
+
+.a-link::before {
+  background: #faf3dd;
+  transform:scaleX(1);
+  transform-origin:left
+}
+
+.b-link::before {
+  background: #282828;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.a-link:hover::before {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.b-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Lol */
+main {
+  margin: 0 10vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  font-family: tenez, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: calc(5rem + 5vw);
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 2.2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+}
+
+ul li {
+  margin: 0.5em 0;
+}
