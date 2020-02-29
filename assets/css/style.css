@@ -6,7 +6,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: proxima-nova, sans-serif;
-  background-color: var(--background);
+  background-color: var(--background3);
   color: var(--black);
 }
 
@@ -35,6 +35,7 @@ body {
 :root {
   --background: #faf3dd;
   --background2: #eddfc9;
+  --background3: #dbd5c9;
   --black: #444444;
 }
 
