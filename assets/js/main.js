@@ -73,23 +73,39 @@ let projects = gsap.from(".projects div a", {
 
 let scene = new ScrollMagic.Scene({
   triggerElement: ".projects",
-  triggerHook: 0.5
+  triggerHook: 0.6
 })
   .setTween(projects)
   .addTo(controller);
 
-let selected__img = gsap.from(".img img", {
-  duration: 2,
-  scale: 1.2,
-  ease: "power4"
-});
+function selectedImg(mql) {
+  if (mql.matches) {
+    let selected__img = gsap.from(".img img", {
+      duration: 2,
+      scale: 0.8,
+      ease: "power4.inOut"
+    });
 
-let scene2 = new ScrollMagic.Scene({
-  triggerElement: ".selected-work",
-  triggerHook: 0.5
-})
-  .setTween(selected__img)
-  .addTo(controller);
+    let scene2 = new ScrollMagic.Scene({
+      triggerElement: ".selected-work",
+      triggerHook: 0.5
+    });
+  } else {
+    let selected__img = gsap.from(".img img", {
+      duration: 2,
+      scale: 1.2,
+      ease: "power4.inOut"
+    });
+
+    let scene2 = new ScrollMagic.Scene({
+      triggerElement: ".selected-work",
+      triggerHook: 0.5
+    });
+  }
+}
+
+let mql = window.matchMedia("(max-width: 834px)");
+selectedImg(mql);
 
 let left__h3 = gsap.from(".left h3", {
   duration: 1,
@@ -122,7 +138,7 @@ let scene4 = new ScrollMagic.Scene({
 
 let catchphrase = gsap.from(".catchphrase h3", {
   duration: 1,
-  y: 30,
+  scale: 1.2,
   opacity: 0,
   ease: "power4"
 });
