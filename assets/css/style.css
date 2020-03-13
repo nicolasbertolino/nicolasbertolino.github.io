@@ -318,17 +318,17 @@ header h1 {
   display: flex;
   justify-content: space-between;
   margin-top: 7vh;
-  
 }
 
-.projects div a {
+.projects div p {
   font-family: var(--serif);
   font-size: calc(1em + 8vw);
   line-height: 1.1;
+  margin: 0;
   transition: color 0.3s;
 }
 
-.projects div a::before {
+.projects div p::before {
   content: attr(data-number);
   position: relative;
   bottom: 25%;
@@ -338,7 +338,7 @@ header h1 {
   margin-right: 2vw;
 }
 
-.projects div a:hover {
+.projects div p:hover {
   color: var(--secondary);
   cursor: crosshair;
 }
@@ -352,7 +352,7 @@ header h1 {
     margin-top: 0;
   }
 
-  .projects div a {
+  .projects div p {
     margin-top: 4vh;
     text-align: center;
   }
@@ -555,4 +555,174 @@ strong {
   .contact p a::after {
     height: 2px;
   }
+}
+
+/* Projects Content */
+.lock {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s ease;
+}
+
+.close__container {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-out;
+  z-index: 3;
+}
+
+.close {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--background);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}
+
+.close::after,
+.close::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: var(--background);
+  transform: rotate(45deg);
+  border-radius: 4px;
+  top: 37px;
+  left: 18px;
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  visibility: hidden;
+  background-color: var(--background);
+  z-index: 2;
+  opacity: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.show-project {
+  visibility: visible;
+  width: 80%;
+}
+
+.project__infos {
+  position: relative;
+  padding: 5vh 3vw;
+}
+
+.project__infos h2 {
+  font-size: calc(3em + 3vw);
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+  margin: 10vh 0;
+}
+
+.project__number {
+  position: absolute;
+  bottom: 0;
+  font-family: var(--serif);
+  font-size: calc(2em + 2vw);
+  font-weight: normal;
+  margin: 0.3em 0;
+}
+
+.project__see {
+  margin: 5vh 0 10vh;
+  font-size: calc(1.1em + 0.1vw);
+}
+
+.project__infos div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 834px) {
+  .lock {
+    padding-right: 0;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+  }
+
+  .show-project {
+    width: 100%;
+  }
+
+  .project div:last-child {
+    grid-row: 1;
+    min-height: 20vh;
+  }
+
+  .close__container {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .close__container {
+    transform: scale(0.9);
+    top: 5px;
+    left: 5px;
+  }
+}
+
+
+#bm div:last-child {
+  background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/61031821_1730262153784065_4670690094456242176_o.jpg?_nc_cat=109&_nc_sid=8024bb&_nc_ohc=-7f2H05lDkIAX9hV_Nk&_nc_ht=scontent-cdg2-1.xx&oh=94d628e2c9c25f45d9e47c65692c714d&oe=5E92A13E);
+  background-size: cover;
+  background-position: center;
+}
+
+#tf div:last-child {
+  background-image: url(https://www.terrefete.com/assets/images/backgrounds/bg-maison.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#lpc div:last-child {
+  background-image: url(https://www.lesptitscoquelicots.com/assets/images/photos/exterieur1.jpg);
+  background-size: cover;
+  background-position: center;
 }
