@@ -305,12 +305,12 @@ header h1 {
 }
 
 /* Work */
-#work {
+.work {
   position: relative;
   padding: 2em 0 0;
 }
 
-#work h4 {
+.work h4 {
   margin: 0 auto;
   width: max-content;
 }
