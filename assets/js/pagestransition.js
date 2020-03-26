@@ -89,14 +89,24 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__number",
     {
-      y: 20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.6,
-      y: 0,
       opacity: 1,
+      ease: "power2"
+    }
+  );
+  gsap.fromTo(
+    ".project div:last-child",
+    {
+      clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+      ease: "power2"
+    },
+    {
+      delay: 0.3,
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       ease: "power2"
     }
   );
@@ -128,9 +138,9 @@ barba.init({
         contentAnimation();
       },
 
-      async once(data) {
-        contentAnimation();
-      }
+      // async once(data) {
+      //   contentAnimation();
+      // }
     }
   ]
 });
