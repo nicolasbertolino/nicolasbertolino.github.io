@@ -6,13 +6,13 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__infos div:first-of-type",
     {
-      y: 20,
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.1,
-      y: 0,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
@@ -20,12 +20,12 @@ function contentAnimation() {
   gsap.fromTo(
     ".arrow-left",
     {
-      y: 20,
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
-      y: 0,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
@@ -33,13 +33,13 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__infos h4",
     {
-      y: 20,
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.2,
-      y: 0,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
@@ -47,13 +47,13 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__infos h2",
     {
-      y: 20,
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.3,
-      y: 0,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
@@ -61,13 +61,13 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__description",
     {
-      y: 20,
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.4,
-      y: 0,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
@@ -75,13 +75,13 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__see",
     {
-      y: 20,
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.5,
-      y: 0,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
@@ -89,11 +89,13 @@ function contentAnimation() {
   gsap.fromTo(
     ".project__number",
     {
+      x: -20,
       opacity: 0,
       ease: "power2"
     },
     {
       delay: 0.6,
+      x: 0,
       opacity: 1,
       ease: "power2"
     }
