@@ -305,7 +305,7 @@ header h1 {
   padding: 2em 0 0;
 }
 
-.work h4 {
+.work h4:first-of-type {
   margin: 0 auto;
   width: max-content;
 }
