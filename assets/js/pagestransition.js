@@ -3,6 +3,67 @@ function leaveTransition() {
 }
 
 function contentAnimation() {
+  gsap.to(".name", {
+    duration: 1,
+    delay: 1.5,
+    opacity: 1,
+    ease: "power3"
+  });
+
+  gsap.to(".star", {
+    duration: 0.5,
+    delay: 1.5,
+    opacity: 1,
+    ease: "power3"
+  });
+
+  gsap.to(".circle", {
+    duration: 2,
+    delay: 0.5,
+    scale: 1,
+    ease: "power3"
+  });
+
+  gsap.to(".vertical-line", {
+    duration: 2,
+    delay: 0.2,
+    scaleY: 1,
+    transformOrigin: "top",
+    ease: "power3"
+  });
+
+  gsap.to(".horizontal-line", {
+    duration: 2,
+    delay: 0.5,
+    scaleX: 1,
+    transformOrigin: "left",
+    ease: "power3"
+  });
+
+  gsap.to(".numbers li", {
+    delay: 0.5,
+    y: 0,
+    opacity: 1,
+    stagger: 0.1,
+    ease: "power4"
+  });
+
+  gsap.to(".roles li", {
+    delay: 1.2,
+    y: 0,
+    opacity: 1,
+    stagger: 0.1,
+    ease: "power4"
+  });
+
+  gsap.to(".socials li", {
+    delay: 1.5,
+    y: 0,
+    opacity: 1,
+    stagger: 0.1,
+    ease: "power4"
+  });
+
   let controller = new ScrollMagic.Controller();
 
   let projects = gsap.from(".projects div a", {
@@ -253,7 +314,7 @@ function contentAnimation() {
       ease: "power2"
     },
     {
-      delay: 0.3,
+      delay: 0.4,
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       ease: "power2"
     }

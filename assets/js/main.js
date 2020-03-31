@@ -1,61 +1,61 @@
 // Header GSAP
-gsap.from(".name", {
+gsap.to(".name", {
   duration: 1,
   delay: 1.5,
-  opacity: 0,
+  opacity: 1,
   ease: "power3"
 });
 
-gsap.from(".circle", {
-  duration: 2,
-  delay: 0.5,
-  scale: 0,
-  ease: "power3"
-});
-
-gsap.from(".star", {
+gsap.to(".star", {
   duration: 0.5,
   delay: 1.5,
-  opacity: 0,
+  opacity: 1,
   ease: "power3"
 });
 
-gsap.from(".vertical-line", {
+gsap.to(".circle", {
+  duration: 2,
+  delay: 0.5,
+  scale: 1,
+  ease: "power3"
+});
+
+gsap.to(".vertical-line", {
   duration: 2,
   delay: 0.2,
-  scaleY: 0,
+  scaleY: 1,
   transformOrigin: "top",
   ease: "power3"
 });
 
-gsap.from(".horizontal-line", {
+gsap.to(".horizontal-line", {
   duration: 2,
   delay: 0.5,
-  scaleX: 0,
+  scaleX: 1,
   transformOrigin: "left",
   ease: "power3"
 });
 
-gsap.from(".numbers li", {
+gsap.to(".numbers li", {
   delay: 0.5,
-  y: "100%",
-  opacity: 0,
+  y: 0,
+  opacity: 1,
   stagger: 0.1,
   ease: "power4"
 });
 
-gsap.from(".roles li", {
+gsap.to(".roles li", {
   delay: 1.2,
-  y: "100%",
-  opacity: 0,
+  y: 0,
+  opacity: 1,
   stagger: 0.1,
   ease: "power4"
 });
 
-gsap.from(".socials li", {
+gsap.to(".socials li", {
   delay: 1.5,
-  y: "100%",
-  opacity: 0,
+  y: 0,
+  opacity: 1,
   stagger: 0.1,
   ease: "power4"
 });
