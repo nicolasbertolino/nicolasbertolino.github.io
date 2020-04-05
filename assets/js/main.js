@@ -63,7 +63,7 @@ gsap.to(".socials li", {
 // ScrollMagic Scenes
 let controller = new ScrollMagic.Controller();
 
-let projects = gsap.from(".projects div a", {
+let projects = gsap.from(".work a", {
   duration: 1,
   y: "100%",
   opacity: 0,
@@ -72,7 +72,7 @@ let projects = gsap.from(".projects div a", {
 });
 
 let scene = new ScrollMagic.Scene({
-  triggerElement: ".projects",
+  triggerElement: ".work div",
   triggerHook: 0.6
 })
   .setTween(projects)

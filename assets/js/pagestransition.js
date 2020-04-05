@@ -66,7 +66,7 @@ function contentAnimation() {
 
   let controller = new ScrollMagic.Controller();
 
-  let projects = gsap.from(".projects div a", {
+  let projects = gsap.from(".work div a", {
     duration: 1,
     y: "100%",
     opacity: 0,
@@ -75,7 +75,7 @@ function contentAnimation() {
   });
 
   let scene = new ScrollMagic.Scene({
-    triggerElement: ".projects",
+    triggerElement: ".work div",
     triggerHook: 0.6
   })
     .setTween(projects)
