@@ -75,8 +75,7 @@ a {
   overflow: hidden;
 }
 
-.a-link::after,
-.b-link::after {
+.a-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -84,17 +83,9 @@ a {
   height: 1px;
   width: 100%;
   background: var(--black);
-  transition: transform 0.4s ease-out;
-}
-
-.a-link::after {
   transform: scaleX(1);
   transform-origin: left;
-}
-
-.b-link::after {
-  transform: scaleX(0);
-  transform-origin: right;
+  transition: transform 0.4s ease-out;
 }
 
 .a-link:hover::after {
@@ -102,9 +93,7 @@ a {
   transform-origin: right;
 }
 
-.b-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.b-link {
 }
 
 /* Header */
@@ -260,56 +249,18 @@ header {
   opacity: 0;
 }
 
+.socials a {
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: var(--secondary);
+}
+
 @media screen and (max-width: 834px) {
   .socials {
     width: 100%;
   }
-}
-
-/* Light & Dark Mode */
-.light,
-.dark {
-  font-family: var(--sans-serif);
-  font-size: calc(0.8em + 0.1vw);
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
-}
-
-.light {
-  left: 0;
-}
-
-.dark {
-  right: 0;
-}
-
-.light::after,
-.dark::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  /* transform: scaleX(0); */
-}
-
-.light::after {
-  background-color: var(--black);
-}
-
-.dark::after {
-  background-color: var(--secondary);
-}
-
-.light p,
-.dark p {
-  padding: 1.5em;
-}
-
-.dark p {
-  color: var(--secondary);
 }
 
 /* Work */
@@ -347,136 +298,6 @@ header {
 .work a:hover {
   color: var(--secondary);
   cursor: crosshair;
-}
-
-/* Highlighted Project */
-.selected-work {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.left .star {
-  top: 50%;
-  left: 98%;
-}
-
-.left {
-  background-color: white;
-  position: relative;
-}
-
-.left h3 {
-  margin: -0.5em auto 0;
-  width: 40%;
-  text-align: center;
-  padding-bottom: 15vh;
-}
-
-.left .img {
-  width: 70%;
-  height: 80vh;
-  margin: 15vh auto 0;
-}
-
-.img img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.right {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.right div:first-child {
-  width: 50%;
-  height: 70%;
-}
-
-.right div h2 {
-  font-family: var(--sans-serif);
-  font-size: calc(1.5em + 0.1vw);
-  font-weight: normal;
-  margin-top: 10vh;
-}
-
-.right div p {
-  margin: 5vh 0;
-}
-
-.right div a {
-  font-family: var(--serif);
-  font-size: calc(2em + 0.2vw);
-}
-
-.bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 25%;
-  background-image: url(https://www.lesptitscoquelicots.com/assets/images/photos/exterieur9.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (max-width: 834px) {
-  .selected-work {
-    grid-template-columns: 1fr;
-  }
-
-  .left .star {
-    top: 5vh;
-    left: calc(50% - 21px);
-  }
-
-  .left h3 {
-    padding-bottom: 0;
-  }
-
-  .right {
-    background-color: white;
-  }
-
-  .right div:first-child {
-    text-align: center;
-    height: 100%;
-    padding-bottom: 5vh;
-  }
-
-  .right div h2 {
-    display: none;
-  }
-
-  .right div h4:first-child {
-    display: none;
-  }
-
-  .bottom {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 441px) {
-  .left .img {
-    width: 90%;
-    height: 50vh;
-    margin: 15vh auto 0;
-  }
-
-  .left h3 {
-    width: 70%;
-  }
-
-  .right div:first-child {
-    width: 100%;
-    padding-right: 5vw;
-    padding-left: 5vw;
-  }
 }
 
 /* Catchphrase */
