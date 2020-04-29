@@ -79,7 +79,7 @@ class Smooth {
     const diff = this.data.current - this.data.rounded;
     const acc = diff / config.width;
     const velo = +acc;
-    const skew = velo * 7.5;
+    const skew = velo * 1;
 
     this.dom.content.style.transform = `translate3d(0, -${this.data.rounded}px, 0) skewY(${skew}deg)`;
 
