@@ -131,7 +131,7 @@ a {
 }
 
 .showcase img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg);
 }
 
 .project-right {
