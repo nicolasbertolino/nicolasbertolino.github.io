@@ -56,19 +56,26 @@ h1 {
 }
 
 h2 {
-  font-size: calc(1.5em + 1vw);
+  font-size: calc(1em + 2vw);
   font-weight: normal;
   line-height: 1;
   margin: 0.5em 0;
 }
 
 h3 {
+  font-size: calc(1.5em + 1vw);
+  font-weight: normal;
+  line-height: 1;
+  margin: 0.5em 0;
+}
+
+h4 {
   font-size: calc(2em + 1vw);
   font-weight: normal;
   line-height: 1;
 }
 
-h4 {
+h5 {
   font-family: var(--sans-serif);
   font-weight: 300;
   font-size: 0.9em;
