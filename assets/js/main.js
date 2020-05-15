@@ -146,7 +146,14 @@ gsap.to("h1", {
   delay: 1.5,
   y: 0,
   opacity: 1,
-  stagger: 0.1,
+  ease: "power3"
+});
+
+gsap.to("h2", {
+  duration: 1,
+  delay: 1.6,
+  y: 0,
+  opacity: 1,
   ease: "power3"
 });
 
