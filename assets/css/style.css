@@ -27,7 +27,8 @@ body {
   --background: #fff;
   --background2: #dbd5c9;
   --black: #333333;
-  --secondary: #f93700;
+  /* --secondary: #f93700; */
+  --secondary: #42e27f;
   --secondary_alt: #ff501e;
   --serif: tenez, serif;
   --sans-serif: gopher, sans-serif;
@@ -187,6 +188,7 @@ a {
 .about .circle-container {
   top: 50%;
   transform: translate(-85%, -50%);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1200px) {
