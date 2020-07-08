@@ -344,9 +344,9 @@ barba.init({
         contentAnimation();
       },
 
-      async once(data) {
-        contentAnimation();
-      }
+      // async once(data) {
+      //   contentAnimation();
+      // }
     },
   ],
 });
