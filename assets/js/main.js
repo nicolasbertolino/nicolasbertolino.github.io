@@ -9,37 +9,37 @@
 // Geometry
 gsap.to(".star", {
   duration: 0.5,
-  delay: 2,
+  delay: 1,
   opacity: 1,
   ease: "power3",
 });
 
-gsap.to(".circle", {
-  duration: 2,
-  delay: 0.5,
-  scale: 1,
-  ease: "power3",
-});
+// gsap.to(".circle", {
+//   duration: 2,
+//   delay: 0.5,
+//   scale: 1,
+//   ease: "power3",
+// });
 
-gsap.to(".vertical-line", {
-  duration: 2,
-  delay: 0.2,
-  scaleY: 1,
-  transformOrigin: "top",
-  ease: "power3",
-});
+// gsap.to(".vertical-line", {
+//   duration: 2,
+//   delay: 0.2,
+//   scaleY: 1,
+//   transformOrigin: "top",
+//   ease: "power3",
+// });
 
-gsap.to(".horizontal-line", {
-  duration: 2,
-  delay: 0.5,
-  scaleX: 1,
-  transformOrigin: "left",
-  ease: "power3",
-});
+// gsap.to(".horizontal-line", {
+//   duration: 2,
+//   delay: 0.5,
+//   scaleX: 1,
+//   transformOrigin: "left",
+//   ease: "power3",
+// });
 
 // Socials
 gsap.to(".socials > *", {
-  delay: 1.5,
+  delay: 0.5,
   x: 0,
   opacity: 1,
   stagger: 0.1,
@@ -49,7 +49,7 @@ gsap.to(".socials > *", {
 // Intro
 gsap.to(".intro h1", {
   duration: 1,
-  delay: 1,
+  delay: 0.1,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -57,7 +57,7 @@ gsap.to(".intro h1", {
 
 gsap.to(".intro h2", {
   duration: 1,
-  delay: 1.1,
+  delay: 0.2,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -65,7 +65,7 @@ gsap.to(".intro h2", {
 
 gsap.to(".intro p", {
   duration: 1,
-  delay: 1.2,
+  delay: 0.3,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -155,10 +155,11 @@ gsap.to(".contact div:first-child ul li", {
   ease: "power3",
 });
 
-gsap.to(CSSRulePlugin.getRule(".contact div:first-child::after"), {
+gsap.to(".diagonal-line", {
   duration: 1,
   delay: 1.4,
-  cssRule: { scaleY: 1, transformOrigin: "top" },
+  scaleY: 1,
+  transformOrigin: "top",
   ease: "power3",
 });
 
@@ -302,10 +303,11 @@ function contentAnimation() {
     ease: "power3",
   });
 
-  gsap.to(CSSRulePlugin.getRule(".contact div:first-child::after"), {
+  gsap.to(".diagonal-line", {
     duration: 1,
     delay: 0.25,
-    cssRule: { scaleY: 1, transformOrigin: "top" },
+    scaleY: 1,
+    transformOrigin: "top",
     ease: "power3",
   });
 
