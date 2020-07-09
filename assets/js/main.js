@@ -1,3 +1,13 @@
+// Progress bar
+window.onscroll = function progressBar() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("progressbar").style.width = scrolled + "%";
+};
+
 // Nav
 // gsap.to("nav *", {
 //   y: 0,
@@ -9,7 +19,7 @@
 // Geometry
 gsap.to(".star", {
   duration: 0.5,
-  delay: 1,
+  delay: 2,
   opacity: 1,
   ease: "power3",
 });
@@ -39,7 +49,7 @@ gsap.to(".star", {
 
 // Socials
 gsap.to(".socials > *", {
-  delay: 0.5,
+  delay: 1.5,
   x: 0,
   opacity: 1,
   stagger: 0.1,
@@ -49,7 +59,7 @@ gsap.to(".socials > *", {
 // Intro
 gsap.to(".intro h1", {
   duration: 1,
-  delay: 0.1,
+  delay: 1,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -57,7 +67,7 @@ gsap.to(".intro h1", {
 
 gsap.to(".intro h2", {
   duration: 1,
-  delay: 0.2,
+  delay: 1.1,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -65,7 +75,7 @@ gsap.to(".intro h2", {
 
 gsap.to(".intro p", {
   duration: 1,
-  delay: 0.3,
+  delay: 1.2,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -348,7 +358,7 @@ barba.init({
 
       async once(data) {
         contentAnimation();
-      }
+      },
     },
   ],
 });

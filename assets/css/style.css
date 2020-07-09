@@ -24,6 +24,14 @@ body {
   color: whitesmoke;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
 :root {
   --background: #eeeeee;
   --black: #333333;
@@ -576,4 +584,16 @@ nav ul li:hover,
   .socials a svg {
     max-height: 25px;
   }
+}
+
+/* Progress bar */
+#progressbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--secondary);
+  z-index: 2;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
