@@ -1,10 +1,10 @@
-// GSAP
-gsap.to("nav *", {
-  y: 0,
-  opacity: 1,
-  stagger: 0.05,
-  ease: "power3",
-});
+// Nav
+// gsap.to("nav *", {
+//   y: 0,
+//   opacity: 1,
+//   stagger: 0.05,
+//   ease: "power3",
+// });
 
 // Geometry
 gsap.to(".star", {
@@ -172,7 +172,7 @@ gsap.to(".contact div:last-child p", {
 
 // Pages Transitions
 function leaveTransition() {
-  gsap.to("main", { duration: 0.3, opacity: 0, ease: "power3" });
+  gsap.to(".content", { duration: 0.3, opacity: 0, ease: "power3" });
 }
 
 function contentAnimation() {
@@ -344,9 +344,9 @@ barba.init({
         contentAnimation();
       },
 
-      // async once(data) {
-      //   contentAnimation();
-      // }
+      async once(data) {
+        contentAnimation();
+      }
     },
   ],
 });
