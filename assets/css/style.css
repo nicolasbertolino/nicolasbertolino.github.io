@@ -574,7 +574,7 @@ nav ul li:hover,
     bottom: 5vh;
     left: 50%;
     transform: translate(-50%, 0);
-    height: auto;
+    height: unset;
     width: calc(150px + 15vw);
     flex-direction: row;
     justify-content: space-between;
