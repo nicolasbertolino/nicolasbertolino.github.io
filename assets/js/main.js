@@ -115,6 +115,13 @@ gsap.to(".socials > *", {
 });
 
 // Work
+gsap.to(".text", {
+  duration: 1,
+  delay: 1.5,
+  opacity: 0.1,
+  ease: "power3",
+});
+
 gsap.to("figure img", {
   duration: 1,
   delay: 1,
