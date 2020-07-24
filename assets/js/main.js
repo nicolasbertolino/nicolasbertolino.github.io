@@ -1,63 +1,25 @@
-// Progress bar
-window.onscroll = function progressBar() {
-  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  let height =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrolled = (winScroll / height) * 100;
-  document.getElementById("progressbar").style.width = scrolled + "%";
-};
+let mainNavLinks = document.querySelectorAll(".nav-link");
+let mainSections = document.querySelectorAll("main section");
+
+window.addEventListener("scroll", (event) => {
+  let fromTop = window.scrollY - 50;
+
+  mainNavLinks.forEach((link) => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop + 55 &&
+      section.offsetTop + section.offsetHeight > fromTop + 55
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
 
 // Nav
-// gsap.to("nav *", {
-//   y: 0,
-//   opacity: 1,
-//   stagger: 0.05,
-//   ease: "power3",
-// });
-
-// Geometry
-gsap.to(".star", {
-  duration: 0.5,
-  delay: 2,
-  opacity: 1,
-  ease: "power3",
-});
-
-// gsap.to(".circle", {
-//   duration: 2,
-//   delay: 0.5,
-//   scale: 1,
-//   ease: "power3",
-// });
-
-// gsap.to(".vertical-line", {
-//   duration: 2,
-//   delay: 0.2,
-//   scaleY: 1,
-//   transformOrigin: "top",
-//   ease: "power3",
-// });
-
-// gsap.to(".horizontal-line", {
-//   duration: 2,
-//   delay: 0.5,
-//   scaleX: 1,
-//   transformOrigin: "left",
-//   ease: "power3",
-// });
-
-// Socials
-gsap.to(".socials > *", {
-  delay: 1.5,
-  x: 0,
-  opacity: 1,
-  stagger: 0.1,
-  ease: "power4",
-});
-
-// Intro
-gsap.to(".intro h1", {
+gsap.to("nav div:nth-child(1)", {
   duration: 1,
   delay: 1,
   y: 0,
@@ -65,9 +27,71 @@ gsap.to(".intro h1", {
   ease: "power3",
 });
 
+gsap.to("nav div:nth-child(2)", {
+  duration: 1,
+  delay: 1.3,
+  x: 0,
+  opacity: 1,
+  ease: "power3",
+});
+
+gsap.to("nav div:nth-child(3)", {
+  duration: 1,
+  delay: 1.6,
+  x: 0,
+  opacity: 1,
+  ease: "power3",
+});
+
+// Geometry
+gsap.to(".circle", {
+  duration: 2,
+  delay: 0.5,
+  scale: 1,
+  ease: "power3",
+});
+
+gsap.to(".vertical-line", {
+  duration: 2,
+  delay: 0.5,
+  scaleY: 1,
+  transformOrigin: "top",
+  ease: "power3",
+});
+
+gsap.to(".horizontal-line", {
+  duration: 2,
+  delay: 0.5,
+  scaleX: 1,
+  transformOrigin: "left",
+  ease: "power3",
+});
+
+// Intro
+gsap.to(".intro img", {
+  duration: 1,
+  opacity: 1,
+  ease: "power3",
+});
+
+gsap.to(".intro h1", {
+  duration: 1,
+  delay: 1.8,
+  y: 0,
+  opacity: 1,
+  ease: "power3",
+});
+
+gsap.to(".star", {
+  duration: 0.5,
+  delay: 1.8,
+  opacity: 1,
+  ease: "power3",
+});
+
 gsap.to(".intro h2", {
   duration: 1,
-  delay: 1.1,
+  delay: 1.9,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -75,21 +99,30 @@ gsap.to(".intro h2", {
 
 gsap.to(".intro p", {
   duration: 1,
-  delay: 1.2,
+  delay: 2,
   y: 0,
   opacity: 1,
   ease: "power3",
 });
 
+gsap.to(".socials > *", {
+  duration: 1,
+  delay: 2.3,
+  y: 0,
+  opacity: 1,
+  stagger: 0.1,
+  ease: "power3",
+});
+
 // Work
-gsap.to(".picture img", {
+gsap.to("figure img", {
   duration: 1,
   delay: 1,
   clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
   ease: "power4.inOut",
 });
 
-gsap.to("h3", {
+gsap.to(".project h3", {
   duration: 1,
   delay: 1.5,
   y: 0,
@@ -97,15 +130,7 @@ gsap.to("h3", {
   ease: "power3",
 });
 
-gsap.to("h5", {
-  duration: 1,
-  delay: 1.6,
-  y: 0,
-  opacity: 1,
-  ease: "power3",
-});
-
-gsap.to(".project-right p", {
+gsap.to(".project p", {
   duration: 1,
   delay: 1.7,
   y: 0,
@@ -115,14 +140,14 @@ gsap.to(".project-right p", {
 });
 
 // About
-gsap.to(".about img", {
+gsap.to("#about img", {
   duration: 1,
   delay: 1,
   clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
   ease: "power4.inOut",
 });
 
-gsap.to(".about h1", {
+gsap.to("#about h1", {
   duration: 1,
   delay: 0.5,
   y: 0,
@@ -130,7 +155,7 @@ gsap.to(".about h1", {
   ease: "power3",
 });
 
-gsap.to(".about h2", {
+gsap.to("#about h2", {
   duration: 1,
   delay: 0.6,
   y: 0,
@@ -138,7 +163,7 @@ gsap.to(".about h2", {
   ease: "power3",
 });
 
-gsap.to(".about p", {
+gsap.to("#about p", {
   duration: 1,
   delay: 0.7,
   y: 0,
@@ -156,24 +181,7 @@ gsap.to(".cv", {
 });
 
 // Contact
-gsap.to(".contact div:first-child ul li", {
-  duration: 1,
-  delay: 1,
-  y: 0,
-  opacity: 1,
-  stagger: 0.1,
-  ease: "power3",
-});
-
-gsap.to(".diagonal-line", {
-  duration: 1,
-  delay: 1.4,
-  scaleY: 1,
-  transformOrigin: "top",
-  ease: "power3",
-});
-
-gsap.to(".contact div:last-child p", {
+gsap.to(".contact p", {
   duration: 1,
   delay: 1.6,
   y: 0,
@@ -181,184 +189,12 @@ gsap.to(".contact div:last-child p", {
   ease: "power3",
 });
 
-// Pages Transitions
-function leaveTransition() {
-  gsap.to(".content", { duration: 0.3, opacity: 0, ease: "power3" });
-}
-
-function contentAnimation() {
-  // Geometry
-  gsap.to(".star", {
-    duration: 0.5,
-    delay: 1,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  // Socials
-  gsap.to(".socials > *", {
-    delay: 0.5,
-    x: 0,
-    opacity: 1,
-    stagger: 0.1,
-    ease: "power4",
-  });
-
-  // Intro
-  gsap.to(".intro h1", {
-    duration: 1,
-    delay: 0.1,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  gsap.to(".intro h2", {
-    duration: 1,
-    delay: 0.2,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  gsap.to(".intro p", {
-    duration: 1,
-    delay: 0.3,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  // Work
-  gsap.to(".picture img", {
-    duration: 1,
-    delay: 0.1,
-    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    ease: "power4.inOut",
-  });
-
-  gsap.to("h3", {
-    duration: 1,
-    delay: 0.6,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  gsap.to("h5", {
-    duration: 1,
-    delay: 0.7,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  gsap.to(".project-right p", {
-    duration: 1,
-    delay: 0.8,
-    y: 0,
-    opacity: 1,
-    stagger: 0.2,
-    ease: "power3",
-  });
-
-  // About
-  gsap.to(".about img", {
-    duration: 1,
-    delay: 0.5,
-    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    ease: "power4.inOut",
-  });
-
-  gsap.to(".about h1", {
-    duration: 1,
-    delay: 0.1,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  gsap.to(".about h2", {
-    duration: 1,
-    delay: 0.2,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  gsap.to(".about p", {
-    duration: 1,
-    delay: 0.3,
-    y: 0,
-    opacity: 1,
-    stagger: 0.2,
-    ease: "power3",
-  });
-
-  gsap.to(".cv", {
-    duration: 1,
-    delay: 0.6,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-
-  // Contact
-  gsap.to(".contact div:first-child ul li", {
-    duration: 1,
-    delay: 0.1,
-    y: 0,
-    opacity: 1,
-    stagger: 0.05,
-    ease: "power3",
-  });
-
-  gsap.to(".diagonal-line", {
-    duration: 1,
-    delay: 0.25,
-    scaleY: 1,
-    transformOrigin: "top",
-    ease: "power3",
-  });
-
-  gsap.to(".contact div:last-child p", {
-    duration: 1,
-    delay: 0.4,
-    y: 0,
-    opacity: 1,
-    ease: "power3",
-  });
-}
-
-function delay(n) {
-  n = n || 1000;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
-
-barba.init({
-  sync: true,
-
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
-
-        leaveTransition();
-        await delay(400);
-        done();
-      },
-
-      async enter(data) {
-        contentAnimation();
-      },
-
-      async once(data) {
-        contentAnimation();
-      },
-    },
-  ],
+// Contact
+gsap.to("footer > *", {
+  duration: 1,
+  delay: 1.6,
+  y: 0,
+  opacity: 1,
+  stagger: 0.2,
+  ease: "power3",
 });
