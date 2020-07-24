@@ -344,12 +344,40 @@ main {
   padding-bottom: 10vh;
   max-width: 100ch;
   margin: auto;
+  position: relative;
+}
+
+#work .project .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+  font-size: 15vw;
+  font-weight: bold;
+  opacity: 0.1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 414px) {
+  #work .project .text {
+    -webkit-transform: translate(-50%, -70%) rotate(180deg);
+            transform: translate(-50%, -70%) rotate(180deg);
+  }
 }
 
 #work .project figure {
   width: 100%;
   height: 50vh;
   margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 #work .project figure img {
