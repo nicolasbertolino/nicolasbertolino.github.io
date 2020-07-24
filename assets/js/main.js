@@ -131,7 +131,7 @@ gsap.to("figure img", {
 
 gsap.to(".project h3", {
   duration: 1,
-  delay: 1.5,
+  delay: 1.3,
   y: 0,
   opacity: 1,
   ease: "power3",
@@ -139,10 +139,17 @@ gsap.to(".project h3", {
 
 gsap.to(".project p", {
   duration: 1,
-  delay: 1.7,
+  delay: 1.3,
   y: 0,
   opacity: 1,
-  stagger: 0.2,
+  ease: "power3",
+});
+
+gsap.to(".project > div:last-of-type > div", {
+  duration: 1,
+  delay: 1.3,
+  y: 0,
+  opacity: 1,
   ease: "power3",
 });
 

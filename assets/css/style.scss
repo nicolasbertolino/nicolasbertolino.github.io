@@ -336,6 +336,13 @@ main {
       }
     }
 
+    p {
+      opacity: 0;
+      transform: translateY(30px);
+      width: 50%;
+      padding-right: 1em;
+    }
+
     & > div:first-of-type {
       display: flex;
       justify-content: space-between;
@@ -346,18 +353,13 @@ main {
     & > div:last-of-type {
       position: relative;
 
-      p {
-        opacity: 0;
-        transform: translateY(100%);
-        width: 50%;
-        padding-right: 1em;
-      }
-
       & > div {
         position: absolute;
         top: 0;
         right: 0;
         width: 50%;
+        opacity: 0;
+        transform: translateY(30px);
 
         .line {
           position: absolute;
@@ -381,26 +383,26 @@ main {
           }
         }
       }
+    }
 
-      @media screen and (max-width: 834px) {
-        p {
-          width: 100%;
-        }
-
-        & > div {
-          position: relative;
-          margin-top: 4vh;
-
-          .line {
-            top: 0.7em;
-          }
-        }
+    @media screen and (max-width: 834px) {
+      p {
+        width: 100%;
       }
 
-      @media screen and (max-width: 414px) {
-        & > div {
-          width: 90%;
+      & > div {
+        position: relative;
+        margin-top: 4vh;
+
+        .line {
+          top: 0.7em;
         }
+      }
+    }
+
+    @media screen and (max-width: 414px) {
+      & > div {
+        width: 90%;
       }
     }
   }
@@ -443,7 +445,7 @@ main {
       position: absolute;
       bottom: 0;
       opacity: 0;
-      transform: translateY(100%);
+      transform: translateY(30px);
 
       a {
         position: absolute;

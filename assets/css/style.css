@@ -390,6 +390,14 @@ main {
           clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
+#work .project p {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  width: 50%;
+  padding-right: 1em;
+}
+
 #work .project > div:first-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,19 +416,14 @@ main {
   position: relative;
 }
 
-#work .project > div:last-of-type p {
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  width: 50%;
-  padding-right: 1em;
-}
-
 #work .project > div:last-of-type > div {
   position: absolute;
   top: 0;
   right: 0;
   width: 50%;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 #work .project > div:last-of-type > div .line {
@@ -449,20 +452,20 @@ main {
 }
 
 @media screen and (max-width: 834px) {
-  #work .project > div:last-of-type p {
+  #work .project p {
     width: 100%;
   }
-  #work .project > div:last-of-type > div {
+  #work .project > div {
     position: relative;
     margin-top: 4vh;
   }
-  #work .project > div:last-of-type > div .line {
+  #work .project > div .line {
     top: 0.7em;
   }
 }
 
 @media screen and (max-width: 414px) {
-  #work .project > div:last-of-type > div {
+  #work .project > div {
     width: 90%;
   }
 }
@@ -512,8 +515,8 @@ main {
   position: absolute;
   bottom: 0;
   opacity: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 #about > div .cv a {
