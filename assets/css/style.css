@@ -394,8 +394,6 @@ main {
   opacity: 0;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
-  width: 50%;
-  padding-right: 1em;
 }
 
 #work .project > div:first-of-type {
@@ -414,6 +412,11 @@ main {
 
 #work .project > div:last-of-type {
   position: relative;
+}
+
+#work .project > div:last-of-type p {
+  width: 50%;
+  padding-right: 1em;
 }
 
 #work .project > div:last-of-type > div {

@@ -335,21 +335,26 @@ main {
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
       }
     }
+    
+    p {
+      opacity: 0;
+      transform: translateY(30px);
+    }
 
     & > div:first-of-type {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-
-      p {
-        opacity: 0;
-        transform: translateY(30px);
-      }
     }
 
     & > div:last-of-type {
       position: relative;
+
+      p {
+        width: 50%;
+        padding-right: 1em;
+      }
 
       & > div {
         position: absolute;
@@ -358,11 +363,6 @@ main {
         width: 50%;
         opacity: 0;
         transform: translateY(30px);
-
-        p {
-          width: 50%;
-          padding-right: 1em;
-        }
 
         .line {
           position: absolute;
