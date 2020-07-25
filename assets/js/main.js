@@ -45,7 +45,7 @@ gsap.to("nav div:nth-child(3)", {
   ease: "power3",
 });
 
-// Geometry
+// Header
 gsap.to(".circle", {
   duration: 2,
   delay: 0.5,
@@ -69,7 +69,6 @@ gsap.to(".horizontal-line", {
   ease: "power3",
 });
 
-// Intro
 gsap.to("header img", {
   duration: 1,
   delay: 1,
