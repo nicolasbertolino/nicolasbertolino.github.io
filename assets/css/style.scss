@@ -199,8 +199,8 @@ main {
   padding-right: 10vw;
 }
 
-// Intro
-.intro {
+// Header
+header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -208,6 +208,8 @@ main {
   justify-content: center;
   text-align: center;
   position: relative;
+  padding-left: 10vw;
+  padding-right: 10vw;
 
   img {
     max-width: 15vw;
@@ -337,7 +339,7 @@ main {
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
       }
     }
-    
+
     p {
       opacity: 0;
       transform: translateY(30px);
@@ -388,26 +390,25 @@ main {
           }
         }
       }
-    }
+      @media screen and (max-width: 834px) {
+        p {
+          width: 100%;
+        }
 
-    @media screen and (max-width: 834px) {
-      p {
-        width: 100%;
-      }
+        & > div {
+          position: relative;
+          margin-top: 4vh;
 
-      & > div {
-        position: relative;
-        margin-top: 4vh;
-
-        .line {
-          top: 0.7em;
+          .line {
+            top: 0.7em;
+          }
         }
       }
-    }
 
-    @media screen and (max-width: 414px) {
-      & > div {
-        width: 90%;
+      @media screen and (max-width: 414px) {
+        & > div {
+          width: 90%;
+        }
       }
     }
   }
@@ -500,6 +501,10 @@ main {
 }
 
 @media screen and (max-width: 414px) {
+  #about h1 {
+    margin-bottom: 0.5em;
+  }
+
   .cv {
     width: 90% !important;
   }

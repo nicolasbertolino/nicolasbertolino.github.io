@@ -70,14 +70,14 @@ gsap.to(".horizontal-line", {
 });
 
 // Intro
-gsap.to(".intro img", {
+gsap.to("header img", {
   duration: 1,
   delay: 1,
   opacity: 1,
   ease: "power3",
 });
 
-gsap.to(".intro h1", {
+gsap.to("header h1", {
   duration: 1,
   delay: 1.8,
   y: 0,
@@ -85,14 +85,14 @@ gsap.to(".intro h1", {
   ease: "power3",
 });
 
-gsap.to(".star", {
+gsap.to("header .star", {
   duration: 0.5,
   delay: 1.8,
   opacity: 1,
   ease: "power3",
 });
 
-gsap.to(".intro h2", {
+gsap.to("header h2", {
   duration: 1,
   delay: 1.9,
   y: 0,
@@ -100,7 +100,7 @@ gsap.to(".intro h2", {
   ease: "power3",
 });
 
-gsap.to(".intro p", {
+gsap.to("header p", {
   duration: 1,
   delay: 2,
   y: 0,

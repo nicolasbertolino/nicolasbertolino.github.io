@@ -209,7 +209,7 @@ main {
   padding-right: 10vw;
 }
 
-.intro {
+header {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,9 +226,11 @@ main {
           justify-content: center;
   text-align: center;
   position: relative;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
-.intro img {
+header img {
   max-width: 15vw;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -238,32 +240,32 @@ main {
   opacity: 0;
 }
 
-.intro h1 {
+header h1 {
   font-size: 7vw;
   position: absolute;
   top: 20%;
 }
 
-.intro h1 span:first-child {
+header h1 span:first-child {
   position: absolute;
   right: 6vw;
 }
 
-.intro h1 span:last-child {
+header h1 span:last-child {
   position: absolute;
   left: 6vw;
 }
 
 @media screen and (max-width: 1050px) {
-  .intro img {
+  header img {
     max-width: 25vw;
   }
-  .intro h1 {
+  header h1 {
     font-size: 10vw;
   }
 }
 
-.intro .star {
+header .star {
   margin-top: 5vh;
   width: 42px;
   height: 42px;
@@ -295,7 +297,7 @@ main {
   }
 }
 
-.intro p {
+header p {
   z-index: 1;
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -303,7 +305,7 @@ main {
   max-width: 30ch;
 }
 
-.intro .socials {
+header .socials {
   margin-top: 3vh;
   width: calc(150px + 2vw);
   display: -webkit-box;
@@ -317,23 +319,23 @@ main {
           align-items: center;
 }
 
-.intro .socials > * {
+header .socials > * {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   opacity: 0;
 }
 
-.intro .socials a svg {
+header .socials a svg {
   max-height: 30px;
 }
 
-.intro .socials a svg path {
+header .socials a svg path {
   fill: var(--white);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.intro .socials a:hover svg path {
+header .socials a:hover svg path {
   fill: var(--secondary);
 }
 
@@ -457,20 +459,20 @@ main {
 }
 
 @media screen and (max-width: 834px) {
-  #work .project p {
+  #work .project > div:last-of-type p {
     width: 100%;
   }
-  #work .project > div {
+  #work .project > div:last-of-type > div {
     position: relative;
     margin-top: 4vh;
   }
-  #work .project > div .line {
+  #work .project > div:last-of-type > div .line {
     top: 0.7em;
   }
 }
 
 @media screen and (max-width: 414px) {
-  #work .project > div {
+  #work .project > div:last-of-type > div {
     width: 90%;
   }
 }
@@ -576,6 +578,9 @@ main {
 }
 
 @media screen and (max-width: 414px) {
+  #about h1 {
+    margin-bottom: 0.5em;
+  }
   .cv {
     width: 90% !important;
   }
