@@ -166,6 +166,7 @@ nav div:nth-child(1) {
   position: fixed;
   top: 6vh;
   z-index: 2;
+  cursor: pointer;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
   opacity: 0;
@@ -234,6 +235,7 @@ main {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  opacity: 0;
 }
 
 .intro h1 {

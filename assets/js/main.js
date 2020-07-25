@@ -18,6 +18,8 @@ window.addEventListener("scroll", (event) => {
   });
 });
 
+// onClick="document.querySelector('#work').scrollIntoView();" 
+
 // Nav
 gsap.to("nav div:nth-child(1)", {
   duration: 1,
