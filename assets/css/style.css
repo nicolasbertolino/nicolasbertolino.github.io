@@ -234,7 +234,6 @@ main {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
-  opacity: 0;
 }
 
 .intro h1 {
@@ -363,6 +362,7 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 414px) {
