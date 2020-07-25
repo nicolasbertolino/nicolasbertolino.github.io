@@ -68,12 +68,6 @@ gsap.to(".horizontal-line", {
 });
 
 // Intro
-gsap.to(".intro img", {
-  duration: 1,
-  opacity: 1,
-  ease: "power3",
-});
-
 gsap.to(".intro h1", {
   duration: 1,
   delay: 1.8,
