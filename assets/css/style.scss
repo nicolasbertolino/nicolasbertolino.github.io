@@ -216,6 +216,7 @@ header {
     max-width: 15vw;
     user-select: none;
     pointer-events: none;
+    z-index: 1;
     opacity: 0;
   }
 

@@ -239,6 +239,7 @@ header img {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  z-index: 1;
   opacity: 0;
 }
 
