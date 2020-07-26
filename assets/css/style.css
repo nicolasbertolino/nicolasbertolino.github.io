@@ -570,6 +570,9 @@ header .socials a:hover svg path {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  #about h1 {
+    margin-bottom: 0.3em;
+  }
   #about > div {
     margin-left: 0;
     margin-bottom: 10vh;

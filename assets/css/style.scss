@@ -490,6 +490,10 @@ header {
     display: flex;
     flex-direction: column-reverse;
 
+    h1 {
+    margin-bottom: 0.3em;
+  }
+
     & > div {
       margin-left: 0;
       margin-bottom: 10vh;
