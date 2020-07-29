@@ -1,22 +1,22 @@
-let mainNavLinks = document.querySelectorAll(".nav-link");
-let mainSections = document.querySelectorAll("main section");
+// let mainNavLinks = document.querySelectorAll(".nav-link");
+// let mainSections = document.querySelectorAll("main section");
 
-window.addEventListener("scroll", (event) => {
-  let fromTop = window.scrollY - 50;
+// window.addEventListener("scroll", (event) => {
+//   let fromTop = window.scrollY - 50;
 
-  mainNavLinks.forEach((link) => {
-    let section = document.querySelector(link.hash);
+//   mainNavLinks.forEach((link) => {
+//     let section = document.querySelector(link.hash);
 
-    if (
-      section.offsetTop <= fromTop + 55 &&
-      section.offsetTop + section.offsetHeight > fromTop + 55
-    ) {
-      link.classList.add("current");
-    } else {
-      link.classList.remove("current");
-    }
-  });
-});
+//     if (
+//       section.offsetTop <= fromTop + 55 &&
+//       section.offsetTop + section.offsetHeight > fromTop + 55
+//     ) {
+//       link.classList.add("current");
+//     } else {
+//       link.classList.remove("current");
+//     }
+//   });
+// });
 
 // onClick="document.querySelector('#work').scrollIntoView();" 
 

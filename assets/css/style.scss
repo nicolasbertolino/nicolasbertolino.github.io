@@ -94,6 +94,8 @@ nav {
 
   a {
     transition: color 0.3s;
+    cursor: pointer;
+    z-index: 2;
 
     &:hover {
       color: var(--secondary);
@@ -107,8 +109,6 @@ nav {
   div:nth-child(1) {
     position: fixed;
     top: 6vh;
-    z-index: 2;
-    cursor: pointer;
     transform: translateY(30px);
     opacity: 0;
 
