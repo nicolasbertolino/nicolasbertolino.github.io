@@ -30,8 +30,8 @@ body {
   background-color: var(--background);
   font-family: var(--font);
   color: var(--primary-color);
-  -webkit-transition: color 0.4s, background-color 0.4s, fill 0.4s;
-  transition: color 0.4s, background-color 0.4s, fill 0.4s;
+  -webkit-transition: color 0.3s, background-color 0.3s, fill 0.3s;
+  transition: color 0.3s, background-color 0.3s, fill 0.3s;
 }
 
 *,
@@ -108,8 +108,6 @@ nav {
 }
 
 nav a {
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
   cursor: pointer;
   z-index: 2;
 }
