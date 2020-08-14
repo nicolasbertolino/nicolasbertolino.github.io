@@ -1,24 +1,13 @@
-// let mainNavLinks = document.querySelectorAll(".nav-link");
-// let mainSections = document.querySelectorAll("main section");
+// Theme
+let themeSwitcher = document.querySelector(".star");
 
-// window.addEventListener("scroll", (event) => {
-//   let fromTop = window.scrollY - 50;
-
-//   mainNavLinks.forEach((link) => {
-//     let section = document.querySelector(link.hash);
-
-//     if (
-//       section.offsetTop <= fromTop + 55 &&
-//       section.offsetTop + section.offsetHeight > fromTop + 55
-//     ) {
-//       link.classList.add("current");
-//     } else {
-//       link.classList.remove("current");
-//     }
-//   });
-// });
-
-// onClick="document.querySelector('#work').scrollIntoView();" 
+themeSwitcher.addEventListener("click", function () {
+  if (document.body.hasAttribute("data-theme", "dark")) {
+    document.body.removeAttribute("data-theme");
+  } else {
+    document.body.setAttribute("data-theme", "dark");
+  }
+});
 
 // Nav
 gsap.to("nav div:nth-child(1)", {
