@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--background);
+  font-family: var(--font);
+  color: var(--primary-color);
+  transition: color 0.3s, background-color 0.3s, fill 0.3s;
+}
+
 :root {
   --background: #f2f2f2;
   --primary-color: #333333;
@@ -21,16 +31,6 @@ body[data-theme="dark"] {
   #angry {
     display: block;
   }
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: var(--background);
-  font-family: var(--font);
-  color: var(--primary-color);
-  transition: color 0.3s, background-color 0.3s, fill 0.3s;
 }
 
 *,
@@ -121,6 +121,7 @@ nav {
     top: 6vh;
     transform: translateY(30px);
     opacity: 0;
+    z-index: 2;
 
     svg g {
       font-size: 30px;
@@ -337,7 +338,7 @@ header {
 
     @media screen and (max-width: 414px) {
       .text {
-        transform: translate(-50%, -70%) rotate(180deg);
+        display: none;
       }
     }
 
