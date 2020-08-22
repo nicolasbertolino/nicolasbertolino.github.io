@@ -9,6 +9,27 @@ themeSwitcher.addEventListener("click", function () {
   }
 });
 
+// Scroll to
+let mainNavLinks = document.querySelectorAll(".nav-link");
+let mainSections = document.querySelectorAll("main section");
+
+window.addEventListener("scroll", (event) => {
+  let fromTop = window.scrollY - 50;
+
+  mainNavLinks.forEach((link) => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop <= fromTop + 55 &&
+      section.offsetTop + section.offsetHeight > fromTop + 55
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
 // Nav
 gsap.to("nav div:nth-child(1)", {
   duration: 1,
