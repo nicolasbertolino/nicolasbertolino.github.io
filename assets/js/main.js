@@ -1,13 +1,18 @@
 // Theme
-let themeSwitcher = document.querySelector(".star");
+// let themeSwitcher = document.querySelector(".theme");
 
-themeSwitcher.addEventListener("click", function () {
-  if (document.body.hasAttribute("data-theme", "dark")) {
-    document.body.removeAttribute("data-theme");
-  } else {
-    document.body.setAttribute("data-theme", "dark");
-  }
-});
+// themeSwitcher.addEventListener("click", function () {
+//   if (document.body.hasAttribute("data-theme", "dark")) {
+//     document.body.removeAttribute("data-theme");
+//   } else {
+//     document.body.setAttribute("data-theme", "dark");
+//   }
+// });
+const bodyEl = document.getElementsByTagName("body")[0];
+
+const toggleTheme = (theme) => {
+  bodyEl.dataset.theme = theme;
+};
 
 // Scroll to
 let mainNavLinks = document.querySelectorAll(".nav-link");

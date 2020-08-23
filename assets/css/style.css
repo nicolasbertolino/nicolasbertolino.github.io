@@ -14,10 +14,9 @@ body {
 }
 
 :root {
-  --background: #f2f2f2;
+  --background: #f1f1f1;
   --primary-color: #333333;
-  --secondary-color: #dbcf89;
-  --secondary-color-alt: #f0e9c0;
+  --secondary-color: #dbc549;
   --font: tenez, serif;
 }
 
@@ -43,12 +42,12 @@ body[data-theme="dark"] #angry {
 }
 
 ::-moz-selection {
-  background: var(--secondary-color-alt);
+  background: var(--secondary-color);
   color: whitesmoke;
 }
 
 ::selection {
-  background: var(--secondary-color-alt);
+  background: var(--secondary-color);
   color: whitesmoke;
 }
 
@@ -110,6 +109,8 @@ nav {
 nav a {
   cursor: pointer;
   z-index: 2;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 nav a:hover {
@@ -251,7 +252,7 @@ header img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  pointer-events: none;
+  cursor: pointer;
   z-index: 1;
   opacity: 0;
 }
