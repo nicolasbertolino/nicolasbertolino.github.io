@@ -16,7 +16,7 @@ body {
 :root {
   --background: #f1f1f1;
   --primary-color: #333333;
-  --secondary-color: #dbc549;
+  --secondary-color: #c0a251;
   --font: tenez, serif;
 }
 
@@ -473,6 +473,12 @@ header .socials a:hover svg path {
   height: max-content;
   position: absolute;
   right: 0;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
+}
+
+#work .project > div:last-of-type > div a:hover {
+  color: var(--secondary-color);
 }
 
 #work .project > div:last-of-type > div a:hover + .line {
@@ -668,10 +674,10 @@ header .socials a:hover svg path {
           transform: scaleX(1);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 0.4s ease-out;
-  transition: -webkit-transform 0.4s ease-out;
-  transition: transform 0.4s ease-out;
-  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
 }
 
 .contact a:hover::after {

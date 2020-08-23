@@ -15,7 +15,7 @@ body {
 :root {
   --background: #f1f1f1;
   --primary-color: #333333;
-  --secondary-color: #dbc549;
+  --secondary-color: #c0a251;
   --font: tenez, serif;
 }
 
@@ -403,6 +403,11 @@ header {
           height: max-content;
           position: absolute;
           right: 0;
+          transition: color 0.7s;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
 
           &:hover + .line {
             width: 100%;
@@ -584,7 +589,7 @@ header {
       overflow: hidden;
       transform: scaleX(1);
       transform-origin: left;
-      transition: transform 0.4s ease-out;
+      transition: transform 0.6s ease-out;
     }
 
     &:hover::after {
