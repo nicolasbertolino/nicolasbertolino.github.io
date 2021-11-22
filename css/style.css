@@ -136,6 +136,10 @@ header nav ul li a::before {
   font-weight: normal;
 }
 
+header nav ul li a.active {
+  pointer-events: none;
+}
+
 header nav ul li a span:first-child {
   font-size: 1.25rem;
   width: -webkit-fit-content;

@@ -112,6 +112,9 @@ header {
             font-size: 4rem;
             font-weight: normal;
           }
+          &.active {
+            pointer-events: none;
+          }
           span {
             &:first-child {
               font-size: 1.25rem;
