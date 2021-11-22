@@ -7,10 +7,10 @@ barba.init({
         y: -10
       });
     },
-    // enter(data) {
-    //   return gsap.from(data.next.container, {
-    //     opacity: 0
-    //   });
-    // }
+    enter(data) {
+      return gsap.from(data.next.container, {
+        opacity: 0
+      });
+    }
   }]
 });
