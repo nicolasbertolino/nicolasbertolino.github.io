@@ -136,10 +136,6 @@ header nav ul li a::before {
   font-weight: normal;
 }
 
-header nav ul li a.active {
-  pointer-events: none;
-}
-
 header nav ul li a span:first-child {
   font-size: 1.25rem;
   width: -webkit-fit-content;
@@ -169,6 +165,17 @@ header nav ul li a span:first-child {
 }
 
 header nav ul li a:hover span:first-child::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+header nav ul li a.active {
+  pointer-events: none;
+}
+
+header nav ul li a.active span:first-child::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: left;
