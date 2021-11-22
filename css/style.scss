@@ -72,6 +72,11 @@ h2 {
   margin: 3rem 0 1.5rem;
 }
 
+h3 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 20rem 1fr;
@@ -135,17 +140,6 @@ header {
             }
           }
           &:hover {
-            span {
-              &:first-child {
-                &::before {
-                  transform: scaleX(1);
-                  transform-origin: left;
-                }
-              }
-            }
-          }
-          &.active {
-            pointer-events: none;
             span {
               &:first-child {
                 &::before {
@@ -239,12 +233,8 @@ main {
       }
     }
     .description {
-      .title {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-      }
       @media (max-width: 1024px) {
-        .title {
+        h3 {
           position: absolute;
           top: 0;
           right: 0;
@@ -263,10 +253,23 @@ main {
   }
   > div {
     ul {
-      opacity: 0;
-      transform: translateY(10px);
-      animation: fadeIn 0.6s ease forwards;
-      animation-delay: 0.2s;
+      li {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn 0.6s ease forwards;
+        &:nth-child(1) {
+          animation-delay: 0.2s;
+        }
+        &:nth-child(2) {
+          animation-delay: 0.25s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.3s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.35s;
+        }
+      }
     }
     .website {
       opacity: 0;
@@ -275,28 +278,22 @@ main {
       animation-delay: 0.3s;
     }
     .description {
-      @media (min-width: 1025px) {
+      h3 {
         opacity: 0;
         transform: translateY(10px);
         animation: fadeIn 0.6s ease forwards;
         animation-delay: 0.4s;
-      }
-      .title {
         @media (max-width: 1024px) {
-          opacity: 0;
           transform: translateY(calc(-75% + 10px));
           animation: fadeInBis 0.6s ease forwards;
-          @keyframes fadeInBis {
-            0% {
-              opacity: 0;
-              transform: translateY(calc(-75% + 10px));
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(-75%);
-            }
-          }
+          animation-delay: 0;
         }
+      }
+      p {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn 0.6s ease forwards;
+        animation-delay: 0.5s;
       }
     }
   }
@@ -308,6 +305,16 @@ main {
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  @keyframes fadeInBis {
+    0% {
+      opacity: 0;
+      transform: translateY(calc(-75% + 10px));
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-75%);
     }
   }
 }
