@@ -70,6 +70,9 @@ h1 {
 h2 {
   font-size: 0.6875rem;
   margin: 3rem 0 1.5rem;
+  @media (max-width: 1024px) {
+    margin: 2rem 0 1rem;
+  }
 }
 
 h3 {
@@ -84,6 +87,7 @@ h3 {
   padding-bottom: 6rem;
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
+    gap: 3vw;
   }
 }
 
@@ -100,6 +104,9 @@ header {
       display: flex;
       flex-direction: column;
       gap: 3rem;
+      @media (max-width: 1024px) {
+        gap: 2rem;
+      }
       li {
         a {
           display: inline-flex;
@@ -246,76 +253,64 @@ main {
       }
     }
   }
-  figure {
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards;
-    animation-delay: 0.1s;
-  }
-  > div {
-    ul {
-      li {
-        opacity: 0;
-        transform: translateY(10px);
-        animation: fadeIn 0.6s ease forwards;
-        &:nth-child(1) {
-          animation-delay: 0.2s;
-        }
-        &:nth-child(2) {
-          animation-delay: 0.25s;
-        }
-        &:nth-child(3) {
-          animation-delay: 0.3s;
-        }
-        &:nth-child(4) {
-          animation-delay: 0.35s;
-        }
-      }
-    }
-    .website {
+  @media (min-width: 1025px) {
+    figure {
       opacity: 0;
-      transform: translateY(10px);
       animation: fadeIn 0.6s ease forwards;
-      animation-delay: 0.3s;
+      animation-delay: 0.1s;
     }
-    .description {
-      h3 {
-        opacity: 0;
-        transform: translateY(10px);
-        animation: fadeIn 0.6s ease forwards;
-        animation-delay: 0.4s;
-        @media (max-width: 1024px) {
-          transform: translateY(calc(-75% + 10px));
-          animation: fadeInBis 0.6s ease forwards;
-          animation-delay: 0;
+    > div {
+      ul {
+        li {
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fadeIn 0.6s ease forwards;
+          &:nth-child(1) {
+            animation-delay: 0.2s;
+          }
+          &:nth-child(2) {
+            animation-delay: 0.25s;
+          }
+          &:nth-child(3) {
+            animation-delay: 0.3s;
+          }
+          &:nth-child(4) {
+            animation-delay: 0.35s;
+          }
         }
       }
-      p {
+      .website {
         opacity: 0;
         transform: translateY(10px);
         animation: fadeIn 0.6s ease forwards;
-        animation-delay: 0.45s;
+        animation-delay: 0.3s;
+      }
+      .description {
+        h3 {
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fadeIn 0.6s ease forwards;
+          animation-delay: 0.4s;
+        }
+        p {
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fadeIn 0.6s ease forwards;
+          animation-delay: 0.45s;
+        }
       }
     }
   }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  @keyframes fadeInBis {
-    0% {
-      opacity: 0;
-      transform: translateY(calc(-75% + 10px));
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(-75%);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

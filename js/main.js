@@ -4,13 +4,9 @@ barba.init({
     leave(data) {
       return gsap.to(data.current.container, {
         opacity: 0,
-        y: -10
+        y: -10,
+        duration: 0.3
       });
     },
-    // enter(data) {
-    //   return gsap.from(data.next.container, {
-    //     opacity: 0
-    //   });
-    // }
   }]
 });
