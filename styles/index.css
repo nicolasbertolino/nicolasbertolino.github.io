@@ -1,0 +1,7 @@
+@layer global, main;
+
+@import url('global/base.css') layer(global);
+@import url('global/colors.css') layer(global);
+@import url('global/fonts.css') layer(global);
+
+@import url('main/main.css') layer(main);
