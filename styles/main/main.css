@@ -2,8 +2,9 @@
   position: fixed;
   top: 50vh;
   left: 50%;
-  width: 45vw;
-  height: 45vw;
+  width: min(90vh, 90vw);
+  height: min(90vh, 90vw);
+  aspect-ratio: 1;
   transform: translate(-50%, -50%);
 
   & .circle {
