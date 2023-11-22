@@ -12,6 +12,12 @@
 </head>
 
 <body>
+  <div class="circle-container">
+    <div class="circle"></div>
+  </div>
+  <div class="vertical-line"></div>
+  <div class="horizontal-line"></div>
+
   <div class="wrapper">
     <h1 class="line">
       <span>Nicolas Bertolino</span>
@@ -37,8 +43,29 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script>
+    gsap.from(".circle", {
+      duration: 2,
+      delay: 1,
+      scale: 0,
+      ease: "power3",
+    });
+
+    gsap.from(".vertical-line", {
+      duration: 2,
+      scaleY: 0,
+      ease: "power3",
+    });
+
+    gsap.from(".horizontal-line", {
+      duration: 2,
+      delay: 0.5,
+      scaleX: 0,
+      ease: "power3",
+    });
+
     gsap.from(".line > *", 1.6, {
       y: 50,
+      delay: 1,
       ease: "power4.out",
       skewY: 10,
       stagger: {
