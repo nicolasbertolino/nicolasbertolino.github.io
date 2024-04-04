@@ -1,11 +1,12 @@
 .circle-container {
   position: fixed;
-  top: 50vh;
-  left: 50%;
+  top: 40vh;
+  left: 0;
   width: min(90vh, 90vw);
   height: min(90vh, 90vw);
   aspect-ratio: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(-20%, -60%);
+  pointer-events: none;
 
   & .circle {
     width: 100%;
@@ -18,7 +19,7 @@
 .vertical-line {
   position: fixed;
   top: 0;
-  left: 50%;
+  left: 30%;
   width: 1px;
   height: 100vh;
   transform-origin: top;
@@ -27,7 +28,7 @@
 
 .horizontal-line {
   position: absolute;
-  top: 60vh;
+  top: 40vh;
   left: 0;
   width: 100%;
   height: 1px;
@@ -35,21 +36,14 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  row-gap: 0.5rem;
+main {
+  margin: 2rem;
 }
 
 .line {
   position: relative;
-  display: flex;
-  justify-content: center;
   width: 100%;
-  height: 24px;
+  height: 22px;
   overflow: hidden;
 
   &>* {
@@ -57,16 +51,13 @@
   }
 }
 
+.space-top {
+  margin-top: 1rem;
+}
+
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
-
-ul {
-  display: flex;
-  justify-content: center;
-  column-gap: 0.5rem;
-}
-
 
 a {
   position: relative;
@@ -75,7 +66,7 @@ a {
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     left: 0;
     width: 100%;
     height: 1px;

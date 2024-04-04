@@ -8,7 +8,9 @@
   <title>Nicolas Bertolino - Front-end Developer</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles/index.css">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,34 +20,51 @@
   <div class="vertical-line"></div>
   <div class="horizontal-line"></div>
 
-  <div class="wrapper">
+  <main>
     <h1 class="line">
       <span>Nicolas Bertolino</span>
     </h1>
-    <p class="line">
-      <span>Frontend developer with a knack</span>
+    <p class="line space-top">
+      <span>Développeur front-end,</span>
     </p>
     <p class="line">
-      <span>for crafting engaging user experiences.</span>
+      <span>pour que les utilisateurs aient le béguin</span>
     </p>
-    <div class="line">
-      <ul>
-        <li>
-          <a href="https://github.com/nicolasbertolino" target="_blank" rel="noopener">Github</a>
-        </li>
-        <span>/</span>
-        <li>
-          <a href="https://www.linkedin.com/in/nicolasbertolino" target="_blank" rel="noopener">Linkedin</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+    <p class="line">
+      <span> et se souviennent de leur passage.</span>
+    </p>
+    <ul class="space-top">
+      <li class="line">
+        <a href="https://github.com/nicolasbertolino" target="_blank" rel="noopener">Github</a>
+      </li>
+      <li class="line">
+        <a href="https://www.linkedin.com/in/nicolasbertolino" target="_blank" rel="noopener">Linkedin</a>
+      </li>
+    </ul>
+    <p class="line space-top">
+      <span>Réalisations :</span>
+    </p>
+    <ul>
+      <li class="line">
+        <a href="https://www.nicolasbertolino.com/vente-immobilier/" target="_blank" rel="noopener">Vente immobilier - réplique (2018)</a>
+      </li>
+      <li class="line">
+        <a href="https://www.nicolasbertolino.com/demenagements-aubin/" target="_blank" rel="noopener">Déménagements Aubin - réplique (2018)</a>
+      </li>
+      <li class="line">
+        <a href="https://www.carbonfreeconf.com/" target="_blank" rel="noopener">CarbonFreeConf (2020)</a>
+      </li>
+      <li class="line">
+        <a href="https://www.technal.com/fr-fr/particuliers" target="_blank" rel="noopener">Technal (2023)</a>
+      </li>
+    </ul>
+  </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script>
     gsap.from(".circle", {
       duration: 2,
-      delay: 1,
+      delay: 0.5,
       scale: 0,
       ease: "power3",
     });
@@ -65,7 +84,6 @@
 
     gsap.from(".line > *", 1.6, {
       y: 50,
-      delay: 1,
       ease: "power4.out",
       skewY: 10,
       stagger: {
