@@ -40,6 +40,10 @@ main {
   margin: 2rem;
 }
 
+b {
+  font-weight: 500;
+}
+
 .line {
   position: relative;
   width: 100%;
